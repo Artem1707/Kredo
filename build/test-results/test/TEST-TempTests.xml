@@ -1,139 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TempTests" tests="2" skipped="0" failures="1" errors="0" timestamp="2020-01-18T20:23:22" hostname="SidLenNout" time="23.632">
+<testsuite name="TempTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-01-18T21:02:18" hostname="SidLenNout" time="2.957">
   <properties/>
-  <testcase name="goToDeliveryClub_SetAddress_AddressFoundTest()" classname="TempTests" time="20.892">
-    <failure message="Element should have exact text 'РњРѕСЃРєРІР°, Р›РµРЅРёРЅРіСЂР°РґСЃРєРѕРµ С€РѕСЃСЃРµ, 39РђСЃ2' {.address-input__location}&#10;Element: '&lt;span class=&quot;address-input__location&quot;&gt;Адрес доставки&lt;/span&gt;'&#10;Screenshot: file:/D:/GIT/selenide-gradle/KredoTests/build/reports/tests/1579379022566.0.png&#10;Page source: file:/D:/GIT/selenide-gradle/KredoTests/build/reports/tests/1579379022566.0.html&#10;Timeout: 5 s." type="com.codeborne.selenide.ex.ElementShould">Element should have exact text 'РњРѕСЃРєРІР°, Р›РµРЅРёРЅРіСЂР°РґСЃРєРѕРµ С€РѕСЃСЃРµ, 39РђСЃ2' {.address-input__location}
-Element: '&lt;span class=&quot;address-input__location&quot;&gt;Адрес доставки&lt;/span&gt;'
-Screenshot: file:/D:/GIT/selenide-gradle/KredoTests/build/reports/tests/1579379022566.0.png
-Page source: file:/D:/GIT/selenide-gradle/KredoTests/build/reports/tests/1579379022566.0.html
-Timeout: 5 s.
-	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:72)
-	at com.codeborne.selenide.commands.Should.execute(Should.java:24)
-	at com.codeborne.selenide.commands.Should.execute(Should.java:10)
-	at com.codeborne.selenide.commands.Commands.execute(Commands.java:145)
-	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:99)
-	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:65)
-	at com.sun.proxy.$Proxy13.shouldHave(Unknown Source)
-	at TempTests.goToDeliveryClub_SetAddress_AddressFoundTest(TempTests.java:37)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:513)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:115)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:170)
-	at org.junit.jupiter.engine.execution.ThrowableCollector.execute(ThrowableCollector.java:40)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:166)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:113)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:58)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor$NodeExecutor.lambda$executeRecursively$3(HierarchicalTestExecutor.java:113)
-	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor$NodeExecutor.executeRecursively(HierarchicalTestExecutor.java:108)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor$NodeExecutor.execute(HierarchicalTestExecutor.java:79)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor$NodeExecutor.lambda$executeRecursively$2(HierarchicalTestExecutor.java:121)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
-	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
-	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor$NodeExecutor.lambda$executeRecursively$3(HierarchicalTestExecutor.java:121)
-	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor$NodeExecutor.executeRecursively(HierarchicalTestExecutor.java:108)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor$NodeExecutor.execute(HierarchicalTestExecutor.java:79)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor$NodeExecutor.lambda$executeRecursively$2(HierarchicalTestExecutor.java:121)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
-	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
-	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor$NodeExecutor.lambda$executeRecursively$3(HierarchicalTestExecutor.java:121)
-	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor$NodeExecutor.executeRecursively(HierarchicalTestExecutor.java:108)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor$NodeExecutor.execute(HierarchicalTestExecutor.java:79)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:55)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:43)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220)
-	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188)
-	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:102)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:82)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:78)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-</failure>
-  </testcase>
-  <testcase name="sampleApiTest()" classname="TempTests" time="2.739"/>
-  <system-out><![CDATA[23:23:22.978 [Test worker] INFO  c.c.s.i.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 14 - let's create a new webdriver
-23:23:33.740 [Test worker] INFO  c.c.s.webdriver.BrowserResizer - Set browser size to 1366x768
-23:23:33.872 [Test worker] INFO  c.c.s.webdriver.WebDriverFactory - BrowserName=chrome Version=79.0.3945.117 Platform=WINDOWS
-23:23:33.873 [Test worker] INFO  c.c.s.webdriver.WebDriverFactory - Selenide v. 5.6.0
-23:23:33.873 [Test worker] INFO  c.c.s.webdriver.WebDriverFactory - Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
-23:23:33.873 [Test worker] INFO  c.c.s.d.CreateDriverCommand - Create webdriver in current thread 14: ChromeDriver -> ChromeDriver: chrome on WINDOWS (099bf1f6706aa2022cd069d300aee47f)
-null
-:status:[200]
+  <testcase name="sampleApiTest()" classname="TempTests" time="2.957"/>
+  <system-out><![CDATA[:status:[200]
 accept-ranges:[bytes]
 access-control-allow-origin:[*]
 age:[0]
 cache-control:[no-cache, private]
 cf-cache-status:[DYNAMIC]
-cf-ray:[557349aabe6ebd8c-AMS]
-content-length:[89]
+cf-ray:[5573822c0f6e9cc9-AMS]
+content-length:[101]
 content-type:[application/json]
-date:[Sat, 18 Jan 2020 20:23:37 GMT]
+date:[Sat, 18 Jan 2020 21:02:11 GMT]
 expect-ct:[max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"]
 server:[cloudflare]
-set-cookie:[__cfduid=ddfa1c5654390254248d456b5142b924f1579379017; expires=Mon, 17-Feb-20 20:23:37 GMT; path=/; domain=.dog.ceo; HttpOnly; SameSite=Lax; Secure]
+set-cookie:[__cfduid=d5602d8ac0a3f385ea22b2694dca7b1471579381331; expires=Mon, 17-Feb-20 21:02:11 GMT; path=/; domain=.dog.ceo; HttpOnly; SameSite=Lax; Secure]
 vary:[]
 via:[1.1 varnish (Varnish/6.3), 1.1 varnish (Varnish/6.3)]
 x-cache:[MISS]
 x-cache-hits:[0]
 x-powered-by:[PHP/7.3.6]
-200
-{"message":"https:\/\/images.dog.ceo\/breeds\/puggle\/IMG_162320.jpg","status":"success"}
-DogImage: success   https://images.dog.ceo/breeds/puggle/IMG_162320.jpg
+response: {"message":"https:\/\/images.dog.ceo\/breeds\/setter-english\/n02100735_1117.jpg","status":"success"}
+DogImage: success   https://images.dog.ceo/breeds/setter-english/n02100735_1117.jpg
 ]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 16939
-Only local connections are allowed.
-Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-[1579379007.639][WARNING]: Timed out connecting to Chrome, retrying...
-[1579379011.649][WARNING]: Timed out connecting to Chrome, retrying...
-янв. 18, 2020 11:23:33 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
+  <system-err><![CDATA[]]></system-err>
 </testsuite>

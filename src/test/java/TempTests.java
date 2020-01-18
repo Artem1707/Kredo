@@ -1,4 +1,4 @@
-import Api.TempApi;
+import Api.DogApi;
 import Models.DogImage;
 import WebPages.DeliveryMainPage;
 import WebPages.DeliverySearchResults;
@@ -17,7 +17,7 @@ public class TempTests {
     @BeforeAll
     public static void setUp ()
     {
-        System.setProperty("webdriver.chrome.driver", "D:\\GIT\\selenide-gradle\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "D:\\GIT\\KredoTests\\chromedriver.exe");
         Configuration.timeout=5000;
         Configuration.browser = "chrome";
     }
@@ -28,7 +28,7 @@ public class TempTests {
         open("https://www.delivery-club.ru/");
 
         // Act
-        String address = "Москва, Ленинградское шоссе, 39Ас2";
+        String address = "Москва, Ленинградское шоссе, 39Ас1";
         new DeliveryMainPage().TypeAddress(address);
 
         // Assert
@@ -39,12 +39,7 @@ public class TempTests {
 
     @Test
     public void sampleApiTest() throws IOException {
-        //RestClient tempApi = new RestClientImpl();
-        // String response = tempApi.sendGET("https://dog.ceo/api/breeds/image/random");
-        //DogImage resp2 = tempApi.<DogImage>sendGET("https://dog.ceo/api/breeds/image/random");
-        //DogImage resp2 = tempApi.getRandomDog();
-
-        TempApi obj = new TempApi();
+        DogApi obj = new DogApi();
         DogImage dog = obj.getDogs();
 
         System.out.println("DogImage: " + dog.Status + "   " + dog.Message);
