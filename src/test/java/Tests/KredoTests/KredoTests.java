@@ -1,35 +1,29 @@
 package Tests.KredoTests;
 
-import WebPages.DeliveryMainPage;
-import WebPages.DeliverySearchResults;
-import com.codeborne.selenide.Configuration;
-import org.junit.jupiter.api.BeforeAll;
+import Common.TestsBase;
+import WebPages.LandingPage;
+import com.sun.tools.javac.util.Assert;
 import org.junit.jupiter.api.Test;
-
-import static com.codeborne.selenide.Condition.exactText;
 import static com.codeborne.selenide.Selenide.open;
 
-public class KredoTests {
-    @BeforeAll
-    public static void setUp ()
-    {
-        System.setProperty("webdriver.chrome.driver", "D:\\GIT\\selenide-gradle\\chromedriver.exe");
-        Configuration.timeout=5000;
-        Configuration.browser = "chrome";
-    }
+public class KredoTests extends TestsBase {
 
     @Test
-    public void goToDeliveryClub_SetAddress_AddressFoundTest2(){
+    public void goToLandigPage_PressGoAsInvestorButton_AutorizationFormShown(){
         // Arrange
-        open("https://www.delivery-club.ru/");
+        LandingPage landingPage = GoToClientPortal();
 
         // Act
-        String address = "Москва, Ленинградское шоссе, 39Ас2";
-        new DeliveryMainPage().TypeAddress(address);
+        landingPage.SigIn();
 
         // Assert
-        DeliverySearchResults results = new DeliverySearchResults();
-        System.out.println(results.GetInputAddress());
-        results.deliveryAddressInput.shouldHave(exactText("Москва, Ленинградское шоссе, 39Ас2"));
+        Assert.check(landingPage.SelectSignInDialogShown().equals(true);
+    }
+
+    private LandingPage GoToClientPortal(){
+        open(ClientPortalUrl);
+        LandingPage landingPage = new LandingPage();
+        landingPage.AwaitIsOnPage();
+        return landingPage;
     }
 }
