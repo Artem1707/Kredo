@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Tests.LandingPageTests.SignInTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-01-23T19:39:05" hostname="SidLenNout" time="4.41">
+  <properties/>
+  <testcase name="signIn_asBorrower_Success()" classname="Tests.LandingPageTests.SignInTests" time="4.41"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

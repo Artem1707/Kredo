@@ -1,5 +1,7 @@
 package WebPages;
 
+import WebPages.PageBlocks.SignInModal;
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 
 import static com.codeborne.selenide.Selectors.byClassName;
@@ -10,20 +12,18 @@ import static com.codeborne.selenide.Selenide.$;
 public class LandingPage extends PageBase {
 
     // Elements
-    public SelenideElement SignInButton = $(byCssSelector(".ant-btn.ant-btn-primary"));
-    public SelenideElement SignInDialog = $(byClassName("ant-modal-body"));
+    private SelenideElement SignInButton = $(byCssSelector(".ant-btn.ant-btn-primary"));
 
     // Actions
-    @Override
-    public Boolean AwaitIsOnPage() {
-        return true; // TODO add timer and check
+    public LandingPage awaitIsOnPage() {
+        SignInButton.shouldBe(Condition.visible);
+        return this;
     }
 
-    public void SigIn() {
+    public SignInModal sigIn() {
         SignInButton.click();
-    }
-
-    public Boolean SelectSignInDialogShown(){
-        return SignInDialog.isDisplayed();
+        SignInModal dialog = new SignInModal();
+        dialog.awaitIsOnPage();
+        return dialog;
     }
 }

@@ -87,16 +87,18 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="WebPages" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="WebPages.BorrowerPages" />
+      <recent name="Models" />
+      <recent name="Tests.LandingPageTests" />
       <recent name="WebPages" />
       <recent name="" />
-      <recent name="Api" />
-      <recent name="KredoTests" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -106,26 +108,7 @@
       <recent name="D:\GIT\KredoTests\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.TempTests.goToDeliveryClub_SetAddress_AddressFoundTest">
-    <configuration name="KredoTests [testClasses]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="testClasses" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.Tests in 'KredoTests.test'">
     <configuration name="KredoTests [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -145,12 +128,12 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="KredoTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LandingPageButtonTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;Tests.KredoTests.KredoTests&quot;" />
+        <option name="scriptParameters" value="--tests &quot;Tests.LandingPageTests.LandingPageButtonTests&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -165,12 +148,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TempTests.goToDeliveryClub_SetAddress_AddressFoundTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LandingPageButtonTests.goToLandingPage_PressSignInButton_SignInFormShown" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;TempTests.goToDeliveryClub_SetAddress_AddressFoundTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;Tests.LandingPageTests.LandingPageButtonTests.goToLandingPage_PressSignInButton_SignInFormShown&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -185,12 +168,32 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TempTests.sampleApiTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SignInTests.signIn_asBorrower_Success" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;TempTests.sampleApiTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;Tests.LandingPageTests.SignInTests.signIn_asBorrower_Success&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="SignInTests.signIn_asInvestor_Success" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;Tests.LandingPageTests.SignInTests.signIn_asInvestor_Success&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -227,11 +230,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.TempTests.goToDeliveryClub_SetAddress_AddressFoundTest" />
-        <item itemvalue="Gradle.TempTests.sampleApiTest" />
+        <item itemvalue="Gradle.SignInTests.signIn_asBorrower_Success" />
+        <item itemvalue="Gradle.SignInTests.signIn_asInvestor_Success" />
+        <item itemvalue="Gradle.LandingPageButtonTests.goToLandingPage_PressSignInButton_SignInFormShown" />
+        <item itemvalue="Gradle.LandingPageButtonTests" />
         <item itemvalue="Gradle.KredoTests [test]" />
-        <item itemvalue="Gradle.KredoTests" />
-        <item itemvalue="Gradle.KredoTests [testClasses]" />
       </list>
     </recent_temporary>
   </component>
@@ -285,65 +288,97 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1579371065967" />
+    <state x="574" y="123" key="#com.intellij.ide.util.MemberChooser" timestamp="1579805059825">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="123" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1579805059825" />
     <state x="499" y="197" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1579347694171">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="197" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1579347694171" />
-    <state x="549" y="155" key="FileChooserDialogImpl" timestamp="1579381149366">
+    <state x="549" y="155" key="FileChooserDialogImpl" timestamp="1579798887185">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="155" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1579381149366" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1579642673720">
+    <state x="549" y="155" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1579798887185" />
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1579812560697">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1579642673720" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1579642673720">
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1579812560697" />
+    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1579812560697">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1579642673720" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1579642673719">
+    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1579812560697" />
+    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1579812560697">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1579642673719" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1579642673720">
+    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1579812560697" />
+    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1579812560697">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1579642673720" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1579379714138">
+    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1579812560697" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1579812560701">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1579379714138" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1579379714138">
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1579812560701" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1579812560701">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1579379714138" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1579379714138">
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1579812560701" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1579812560701">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1579379714138" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1579379714138">
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1579812560701" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1579812560701">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1579379714138" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1579812560701" />
+    <state x="277" y="56" key="SettingsEditor" timestamp="1579798908843">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="56" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1579798908843" />
     <state x="584" y="191" key="chooseDestDirectoryDialog" timestamp="1579354221624">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="584" y="191" key="chooseDestDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1579354221624" />
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1579722922059">
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1579798842851">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1579722922059" />
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1579798842851" />
     <state x="540" y="116" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1579347801125">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="540" y="116" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1579347801125" />
+    <state x="511" y="43" key="refactoring.ChangeSignatureDialog" timestamp="1579729806997">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="511" y="43" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1579729806997" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1579347927011">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1579347927011" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1579799165717">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1579799165717" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/Tests/LandingPageTests/SignInTests.java</url>
+          <line>16</line>
+          <properties class="Tests.LandingPageTests.SignInTests" method="signIn_asInvestor_Success">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/KredoTests$KredoTests__test_.ic" NAME="KredoTests [test] Coverage Results" MODIFIED="1579358139045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/KredoTests$LandingPageButtonTests_goToLandingPage_PressSignInButton_SignInFormShown.ic" NAME="LandingPageButtonTests.goToLandingPage_PressSignInButton_SignInFormShown Coverage Results" MODIFIED="1579806452082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/KredoTests$KredoTests_goToDeliveryClub_SetAddress_AddressFoundTest2.ic" NAME="KredoTests.goToDeliveryClub_SetAddress_AddressFoundTest2 Coverage Results" MODIFIED="1579355145852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/KredoTests$Tests_in__KredoTests_test_.ic" NAME="Tests in 'KredoTests.test' Coverage Results" MODIFIED="1579806481366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

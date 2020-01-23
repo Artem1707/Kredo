@@ -4,6 +4,7 @@ import Common.TestsBase;
 import WebPages.DeliveryMainPage;
 import WebPages.DeliverySearchResults;
 import com.sun.tools.javac.util.Assert;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
@@ -11,6 +12,7 @@ import java.io.IOException;
 import static com.codeborne.selenide.Condition.exactText;
 import static com.codeborne.selenide.Selenide.open;
 
+@Disabled
 public class TempTests extends TestsBase {
     @Test
     public void goToDeliveryClub_SetAddress_AddressFoundTest(){

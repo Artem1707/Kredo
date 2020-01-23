@@ -1,10 +1,9 @@
 package Models;
 
-public class KredoUser {
-    public KredoUser(String login, String password, KredoUserType type){
+public abstract class KredoUser {
+    public KredoUser(String login, String password){
         Login = login;
         Password = password;
-        Type = type;
     }
 
     public String Login;
@@ -13,7 +12,5 @@ public class KredoUser {
 
     public KredoUserType Type;
 
-    public String GetLastSmsKey() {
-        return "11111";
-    }
+    public abstract String getLastSmsKey();
 }

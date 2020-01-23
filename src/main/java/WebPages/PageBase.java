@@ -8,5 +8,4 @@ import static com.codeborne.selenide.Selenide.$;
 
 public abstract class PageBase {
 
-    public abstract Boolean AwaitIsOnPage();
 }
