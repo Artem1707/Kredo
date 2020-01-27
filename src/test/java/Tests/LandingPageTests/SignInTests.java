@@ -24,7 +24,7 @@ public class SignInTests extends TestsBase {
                 .sigIn()
                 .signInAsBorrower()
                 .signIn(login, pass)
-                .typeSmsCode(Borrower.GetLastSmsKey());
+                .typeSmsCode(Borrower.getLastSmsKey());
 
         // Assert
         profilePage.awaitIsOnPage();

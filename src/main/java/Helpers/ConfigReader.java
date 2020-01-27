@@ -15,7 +15,9 @@ public class ConfigReader {
 
             propertyValue = property.getProperty(propertyName);
         } catch (IOException e) {
-            System.err.println("ОШИБКА: Файл свойств отсуствует!");
+            System.err.println("Errors");
+
+
         }
 
         return propertyValue;

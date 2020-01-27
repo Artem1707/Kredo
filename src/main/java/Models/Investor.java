@@ -14,7 +14,7 @@ public class Investor extends  KredoUser{
     public KredoUserType Type;
 
     @Override
-    public String GetLastSmsKey() {
+    public String getLastSmsKey() {
         return "11111";
     }
 }

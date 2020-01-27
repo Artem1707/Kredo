@@ -1,6 +1,6 @@
 package Models;
 
-public class Admin extends  KredoUser{
+public class Admin extends KredoUser{
     public Admin(String login, String password){
         super(login, password);
 
@@ -14,7 +14,7 @@ public class Admin extends  KredoUser{
     public KredoUserType Type;
 
     @Override
-    public String GetLastSmsKey() {
+    public String getLastSmsKey() {
         return "11111";
     }
 }

@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Tests.LandingPageTests.LandingPageButtonTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-01-23T19:38:50" hostname="SidLenNout" time="15.222">
+<testsuite name="Tests.LandingPageTests.LandingPageButtonTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-01-27T18:12:18" hostname="MKK-WS-78" time="14.782">
   <properties/>
-  <testcase name="goToLandingPage_PressSignInButton_SignInFormShown()" classname="Tests.LandingPageTests.LandingPageButtonTests" time="15.222"/>
-  <system-out><![CDATA[22:38:50.333 [Test worker] INFO  c.c.s.i.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 14 - let's create a new webdriver
-22:39:00.656 [Test worker] INFO  c.c.s.webdriver.BrowserResizer - Set browser size to 1366x768
-22:39:00.779 [Test worker] INFO  c.c.s.webdriver.WebDriverFactory - BrowserName=chrome Version=79.0.3945.130 Platform=WINDOWS
-22:39:00.779 [Test worker] INFO  c.c.s.webdriver.WebDriverFactory - Selenide v. 5.6.0
-22:39:00.779 [Test worker] INFO  c.c.s.webdriver.WebDriverFactory - Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
-22:39:00.779 [Test worker] INFO  c.c.s.d.CreateDriverCommand - Create webdriver in current thread 14: ChromeDriver -> ChromeDriver: chrome on WINDOWS (88309d6ae16b575e10a4086c8bf3dbd3)
+  <testcase name="goToLandingPage_PressSignInButton_SignInFormShown()" classname="Tests.LandingPageTests.LandingPageButtonTests" time="14.782"/>
+  <system-out><![CDATA[21:12:18.702 [Test worker] INFO  c.c.s.i.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 13 - let's create a new webdriver
+21:12:29.570 [Test worker] INFO  c.c.s.webdriver.BrowserResizer - Set browser size to 1366x768
+21:12:29.696 [Test worker] INFO  c.c.s.webdriver.WebDriverFactory - BrowserName=chrome Version=79.0.3945.130 Platform=WINDOWS
+21:12:29.697 [Test worker] INFO  c.c.s.webdriver.WebDriverFactory - Selenide v. 5.6.1
+21:12:29.697 [Test worker] INFO  c.c.s.webdriver.WebDriverFactory - Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
+21:12:29.697 [Test worker] INFO  c.c.s.d.CreateDriverCommand - Create webdriver in current thread 13: ChromeDriver -> ChromeDriver: chrome on WINDOWS (c232c67f97ecdbe62949dd3fdf13f558)
 ]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 27294
+  <system-err><![CDATA[Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 36420
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-[1579808334.524][WARNING]: Timed out connecting to Chrome, retrying...
-[1579808338.536][WARNING]: Timed out connecting to Chrome, retrying...
-янв. 23, 2020 10:39:00 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1580148743.457][WARNING]: Timed out connecting to Chrome, retrying...
+[1580148747.477][WARNING]: Timed out connecting to Chrome, retrying...
+янв. 27, 2020 9:12:29 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

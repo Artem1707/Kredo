@@ -104,6 +104,7 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\KredoTests\src\main\resources" />
       <recent name="D:\GIT\KredoTests\src\main\resources" />
       <recent name="D:\GIT\KredoTests\src\test\resources" />
     </key>
@@ -230,9 +231,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.LandingPageButtonTests.goToLandingPage_PressSignInButton_SignInFormShown" />
         <item itemvalue="Gradle.SignInTests.signIn_asBorrower_Success" />
         <item itemvalue="Gradle.SignInTests.signIn_asInvestor_Success" />
-        <item itemvalue="Gradle.LandingPageButtonTests.goToLandingPage_PressSignInButton_SignInFormShown" />
         <item itemvalue="Gradle.LandingPageButtonTests" />
         <item itemvalue="Gradle.KredoTests [test]" />
       </list>
@@ -300,38 +301,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="155" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1579798887185" />
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1579812560697">
+    <state width="1342" height="265" key="GridCell.Tab.0.bottom" timestamp="1580148736275">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1579812560697" />
-    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1579812560697">
+    <state width="1342" height="265" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1580148736275" />
+    <state width="1342" height="265" key="GridCell.Tab.0.center" timestamp="1580148736275">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1579812560697" />
-    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1579812560697">
+    <state width="1342" height="265" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1580148736275" />
+    <state width="1342" height="265" key="GridCell.Tab.0.left" timestamp="1580148736275">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1579812560697" />
-    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1579812560697">
+    <state width="1342" height="265" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1580148736275" />
+    <state width="1342" height="265" key="GridCell.Tab.0.right" timestamp="1580148736275">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1579812560697" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1579812560701">
+    <state width="1342" height="265" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1580148736275" />
+    <state width="1342" height="242" key="GridCell.Tab.1.bottom" timestamp="1580147772755">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1579812560701" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1579812560701">
+    <state width="1342" height="242" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1580147772755" />
+    <state width="1342" height="242" key="GridCell.Tab.1.center" timestamp="1580147772754">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1579812560701" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1579812560701">
+    <state width="1342" height="242" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1580147772754" />
+    <state width="1342" height="242" key="GridCell.Tab.1.left" timestamp="1580147772754">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1579812560701" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1579812560701">
+    <state width="1342" height="242" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1580147772754" />
+    <state width="1342" height="242" key="GridCell.Tab.1.right" timestamp="1580147772754">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1579812560701" />
+    <state width="1342" height="242" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1580147772754" />
     <state x="277" y="56" key="SettingsEditor" timestamp="1579798908843">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -340,14 +341,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="584" y="191" key="chooseDestDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1579354221624" />
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1579798842851">
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1580126453963">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1579798842851" />
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1580126453963" />
     <state x="540" y="116" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1579347801125">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="540" y="116" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1579347801125" />
+    <state x="209" y="33" key="new project wizard" timestamp="1580120536848">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="33" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1580120536848" />
     <state x="511" y="43" key="refactoring.ChangeSignatureDialog" timestamp="1579729806997">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -367,18 +372,23 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/Tests/LandingPageTests/SignInTests.java</url>
           <line>16</line>
-          <properties class="Tests.LandingPageTests.SignInTests" method="signIn_asInvestor_Success">
+          <properties class="Tests.LandingPageTests.SignInTests" method="signIn_asBorrower_Success">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Common/TestsBase.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/KredoTests$KredoTests__test_.ic" NAME="KredoTests [test] Coverage Results" MODIFIED="1579358139045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/KredoTests$LandingPageButtonTests_goToLandingPage_PressSignInButton_SignInFormShown.ic" NAME="LandingPageButtonTests.goToLandingPage_PressSignInButton_SignInFormShown Coverage Results" MODIFIED="1579806452082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/KredoTests$KredoTests_goToDeliveryClub_SetAddress_AddressFoundTest2.ic" NAME="KredoTests.goToDeliveryClub_SetAddress_AddressFoundTest2 Coverage Results" MODIFIED="1579355145852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/KredoTests$Tests_in__KredoTests_test_.ic" NAME="Tests in 'KredoTests.test' Coverage Results" MODIFIED="1579806481366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/KredoTests$LandingPageButtonTests_goToLandingPage_PressSignInButton_SignInFormShown.ic" NAME="LandingPageButtonTests.goToLandingPage_PressSignInButton_SignInFormShown Coverage Results" MODIFIED="1579806452082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
