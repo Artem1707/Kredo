@@ -1,15 +1,8 @@
 package Tests.LandingPageTests;
 
 import Common.TestsBase;
-import Helpers.KredoUserProvider;
-import Models.KredoUser;
-import Models.KredoUserType;
 import WebPages.BorrowerPages.ProfileMyDataPage;
-import WebPages.LandingPage;
-import com.sun.tools.javac.util.Assert;
 import org.junit.jupiter.api.Test;
-
-import static com.codeborne.selenide.Selenide.open;
 
 public class SignInTests extends TestsBase {
 
