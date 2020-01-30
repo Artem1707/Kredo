@@ -10,7 +10,7 @@ public class InvestorHomePage {
     private SelenideElement MyProfileTitle = $("[class*='Title__title']");
     private SelenideElement AddBalanceButton = $("[class*='Button__profile-primary-investor']");
 
-    public ProfileMyDataPage awaitIsOnPage(){
+    public InvestorHomePage awaitIsOnPage(){
         MyProfileTitle.waitUntil(Condition.visible, 30 * 1000);
         AddBalanceButton.waitUntil(Condition.visible, 30 * 1000);
         return this;

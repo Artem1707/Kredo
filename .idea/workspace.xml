@@ -13,9 +13,9 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WebPages/LandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WebPages/LandingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WebPages/BorrowerPages/SignUpBorrowerModal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WebPages/BorrowerPages/SignUpBorrowerModal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WebPages/InvesrotPages/InvestorHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WebPages/InvesrotPages/InvestorHomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/WebPages/PageBlocks/SignInModal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WebPages/PageBlocks/SignInModal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WebPages/PageBlocks/SignUpBorrowerModal.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/LandingPageTests/SignInTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/LandingPageTests/SignInTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -125,7 +125,7 @@
       <recent name="D:\GIT\KredoTests\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SignInTests.signUn_asBorrower_Success">
+  <component name="RunManager" selected="JUnit.SignInTests.signUp_asBorrower_Success">
     <configuration name="Tests in 'KredoTests.test'" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -146,8 +146,8 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="All in KredoTests.test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="KredoTests.test" />
+    <configuration name="All in KredoTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="KredoTests" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
       <method v="2">
@@ -158,22 +158,6 @@
       <module name="KredoTests.test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SignInTests.signIn_asBorrower_Success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="KredoTests.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.LandingPageTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests.LandingPageTests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.LandingPageTests.SignInTests" />
-      <option name="METHOD_NAME" value="signIn_asBorrower_Success" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -189,6 +173,22 @@
       <option name="PACKAGE_NAME" value="Tests.LandingPageTests" />
       <option name="MAIN_CLASS_NAME" value="Tests.LandingPageTests.SignInTests" />
       <option name="METHOD_NAME" value="signUn_asBorrower_Success" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SignInTests.signUp_asBorrower_Success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="KredoTests.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.LandingPageTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests.LandingPageTests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.LandingPageTests.SignInTests" />
+      <option name="METHOD_NAME" value="signUp_asBorrower_Success" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -212,11 +212,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SignInTests.signUn_asBorrower_Success" />
+        <item itemvalue="JUnit.SignInTests.signUp_asBorrower_Success" />
         <item itemvalue="JUnit.All in KredoTests.test" />
+        <item itemvalue="JUnit.All in KredoTests" />
+        <item itemvalue="JUnit.SignInTests.signUn_asBorrower_Success" />
         <item itemvalue="JUnit.SignOutTests.signOut_Borrower_fullWindowsSize_Success" />
-        <item itemvalue="JUnit.All in KredoTests.test (1)" />
-        <item itemvalue="JUnit.SignInTests.signIn_asBorrower_Success" />
       </list>
     </recent_temporary>
   </component>
@@ -286,38 +286,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="155" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1580395082127" />
-    <state width="1493" height="265" key="GridCell.Tab.0.bottom" timestamp="1580396691573">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1580411202871">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1580396691573" />
-    <state width="1493" height="265" key="GridCell.Tab.0.center" timestamp="1580396691573">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1580411202871" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1580411202871">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1580396691573" />
-    <state width="1493" height="265" key="GridCell.Tab.0.left" timestamp="1580396691573">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1580411202871" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1580411202871">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1580396691573" />
-    <state width="1493" height="265" key="GridCell.Tab.0.right" timestamp="1580396691573">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1580411202871" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1580411202871">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1580396691573" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1580159693941">
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1580411202871" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1580411054266">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1580159693941" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1580159693941">
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1580411054266" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1580411054266">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1580159693941" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1580159693941">
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1580411054266" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1580411054266">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1580159693941" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1580159693941">
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1580411054266" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1580411054266">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1580159693941" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1580411054266" />
     <state x="277" y="56" key="SettingsEditor" timestamp="1580152280616">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -326,10 +326,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="584" y="191" key="chooseDestDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1579354221624" />
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1580396745565">
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1580407699036">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1580396745565" />
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1580407699036" />
     <state x="540" y="116" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1579347801125">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -356,7 +356,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Common/TestsBase.java</url>
-          <line>33</line>
+          <line>44</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -364,13 +364,18 @@
           <line>26</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Tests/LandingPageTests/SignInTests.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/KredoTests$KredoTests__test_.ic" NAME="KredoTests [test] Coverage Results" MODIFIED="1579358139045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/KredoTests$LandingPageButtonTests_goToLandingPage_PressSignInButton_SignInFormShown.ic" NAME="LandingPageButtonTests.goToLandingPage_PressSignInButton_SignInFormShown Coverage Results" MODIFIED="1579806452082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/KredoTests$KredoTests_goToDeliveryClub_SetAddress_AddressFoundTest2.ic" NAME="KredoTests.goToDeliveryClub_SetAddress_AddressFoundTest2 Coverage Results" MODIFIED="1579355145852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/KredoTests$Tests_in__KredoTests_test_.ic" NAME="Tests in 'KredoTests.test' Coverage Results" MODIFIED="1579806481366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/KredoTests$LandingPageButtonTests_goToLandingPage_PressSignInButton_SignInFormShown.ic" NAME="LandingPageButtonTests.goToLandingPage_PressSignInButton_SignInFormShown Coverage Results" MODIFIED="1579806452082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

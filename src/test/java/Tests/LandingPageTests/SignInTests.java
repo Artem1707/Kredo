@@ -5,7 +5,7 @@ import WebPages.BorrowerPages.ProfileMyDataPage;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-@Disabled
+
 public class SignInTests extends TestsBase {
 
     @Test
@@ -26,7 +26,7 @@ public class SignInTests extends TestsBase {
     }
 
     @Test
-    public void signUn_asBorrower_Success(){
+    public void signUp_asBorrower_Success(){
         // Arrange
         String login = Borrower.Login;
         String pass = Borrower.Password;
