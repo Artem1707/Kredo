@@ -9,6 +9,7 @@ import com.codeborne.selenide.WebDriverProvider;
 import com.codeborne.selenide.WebDriverRunner;
 import com.sun.tools.javac.util.Assert;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
@@ -20,6 +21,7 @@ import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.WebDriverRunner.getAndCheckWebDriver;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
+@Disabled
 public class SignOutTests extends TestsBase {
 
     @Test
@@ -45,7 +47,7 @@ public class SignOutTests extends TestsBase {
 
     private ProfileMyDataPage signInAsBorrower(){
         ProfileMyDataPage profilePage = goToClientPortal()
-                .sigIn()
+                .signIn()
                 .signInAsBorrower()
                 .signIn(Borrower.Login, Borrower.Password)
                 .typeSmsCode(Borrower.getLastSmsKey());

@@ -14,7 +14,7 @@ public class SignInTests extends TestsBase {
 
         // Act
         ProfileMyDataPage profilePage = goToClientPortal()
-                .sigIn()
+                .signIn()
                 .signInAsBorrower()
                 .signIn(login, pass)
                 .typeSmsCode(Borrower.getLastSmsKey());
@@ -22,4 +22,23 @@ public class SignInTests extends TestsBase {
         // Assert
         profilePage.awaitIsOnPage();
     }
+
+    @Test
+    public void signUn_asBorrower_Success(){
+        // Arrange
+        String login = Borrower.Login;
+        String pass = Borrower.Password;
+
+        // Act
+        ProfileMyDataPage profilePage = goToClientPortal()
+                .signUp()
+                .signUpAsBorrower()
+                .signIn(login, pass)
+                .typeSmsCode(Borrower.getLastSmsKey());
+
+        // Assert
+        profilePage.awaitIsOnPage();
+    }
+
+
 }

@@ -14,7 +14,7 @@ public class LandingPageButtonTests extends TestsBase {
 
         // Act & Assert
         landingPage
-                .sigIn()
+                .signIn()
             .SignInDialog
             .shouldBe(Condition.visible);
     }

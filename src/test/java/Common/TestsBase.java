@@ -43,7 +43,7 @@ public abstract class TestsBase {
     }
 
     protected LandingPage goToClientPortal(){
-        open("https://www.kredomoney.ru/");
+        open("https://www.digitalkredo.ru/");
         LandingPage landingPage = new LandingPage();
         return landingPage.awaitIsOnPage();
     }
