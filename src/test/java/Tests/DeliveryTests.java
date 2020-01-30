@@ -1,23 +1,16 @@
 package Tests;
 
+import Common.TestsBase;
 import WebPages.DeliveryMainPage;
 import WebPages.DeliverySearchResults;
-import com.codeborne.selenide.Configuration;
-import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.exactText;
 import static com.codeborne.selenide.Selenide.open;
 
-public class DeliveryTests {
-    @BeforeAll
-    public static void setUp ()
-    {
-        System.setProperty("webdriver.chrome.driver", "D:\\GIT\\selenide-gradle\\chromedriver.exe");
-        Configuration.timeout=5000;
-        Configuration.browser = "chrome";
-    }
-
+@Disabled
+public class DeliveryTests extends TestsBase {
     @Test
     public void goToDeliveryClub_SetAddress_AddressFoundTest(){
         // Arrange

@@ -1,0 +1,117 @@
+<html class="sbbol3"><head>
+    <script src="api/override-content/grib.js?version=35-20200111.042.00"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sberbank OAuth</title>
+    <style>
+        @font-face {
+            font-family: "Roboto";
+            src: url("fonts/roboto-regular.eot");
+            src: url("fonts/roboto-regular.eot?#iefix") format("embedded-opentype"),
+            url("fonts/roboto-regular.woff2") format("woff2"),
+            url("fonts/roboto-regular.woff") format("woff"),
+            url("fonts/roboto-regular.ttf") format("truetype"),
+            url("fonts/roboto-regular.svg#Roboto") format("svg");
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: "SBSansUI";
+            src: url("rebrand/fonts/SBSansUI/SBSansUI-Regular.otf") format("opentype");
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            font-family: "Roboto", "Arial", "PT Sans", sans-serif;
+        }
+        .rebrand-font {
+            font-family: "SBSansUI", "Roboto", "Arial", "PT Sans", sans-serif;
+        }
+        .spinner-wrapper {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .spinner-wrapper .text-wrapper {
+            margin-top: 12px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .spinner-wrapper img {
+            display: none;
+        }
+        .spinner-wrapper img[src] {
+            display: block;
+        }
+    </style>
+<link rel="icon" type="image/png" href="favicon.ico"><link rel="shortcut icon" href="favicon.ico"><link type="text/css" rel="stylesheet" href="app.css?v=_HASH_"><script type="text/javascript" charset="utf-8" src="CommonEnums.js?v=_HASH_"></script><script type="text/javascript" charset="utf-8" src="CommonUtils.js?v=_HASH_"></script><script type="text/javascript" charset="utf-8" src="BusinessActions.js?v=_HASH_"></script><script type="text/javascript" charset="utf-8" src="BusinessUtils.js?v=_HASH_"></script><script type="text/javascript" charset="utf-8" src="BusinessModulesAnalytics.js?v=_HASH_"></script><script type="text/javascript" charset="utf-8" src="crypto.js?v=_HASH_"></script><script type="text/javascript" charset="utf-8" src="react.js?v=_HASH_"></script><script type="text/javascript" charset="utf-8" src="app.js?v=_HASH_"></script></head>
+<body>
+    <div style="display: none">
+        <img id="font-cache" src="fonts/sbbol-icons.eot?v=_HASH_">
+    </div>
+    <div id="app"><div data-reactroot=""><span class="notifications"></span><div><!-- react-empty: 4 --><div class="auth-page-sbbol3 "><div class="sso-header"><div class="sso-logo-wrapper"><div class="sso-logo-icon"><svg width="200" height="39"><g fill="none"><path fill="#17BB4F" id="sberbank" d="m37.728 13.176c-3.264 0-4.928-1.648-4.928-5.856 0-3.984 1.712-5.696 4.88-5.696 1.568 0 2.672.448 2.672.448v1.552c-.608-.368-1.488-.608-2.656-.608-2.192 0-3.36 1.152-3.36 4.304 0 3.264 1.216 4.464 3.424 4.464 1.216 0 2.176-.416 2.72-.736v1.552s-1.184.576-2.752.576zm8.224 0c-2.432 0-3.856-1.296-3.856-5.184 0-5.248 1.248-6.384 4.08-6.768 1.152-.144 2.272-.256 2.896-.512v1.488c-.4.16-1.008.256-2.528.416-2.144.224-3.168.688-3.264 3.904h.048c.544-1.104 1.504-1.84 3.12-1.84 2.288 0 3.312 1.152 3.312 4.112 0 3.056-1.44 4.384-3.808 4.384zm0-1.312c1.52 0 2.352-.912 2.352-3.024 0-2.128-.688-2.848-2.24-2.848-1.632 0-2.496.976-2.496 2.768 0 2.208.816 3.104 2.384 3.104zm9.36 1.312c-2.704 0-3.936-1.36-3.936-4.432 0-2.96 1.376-4.352 3.664-4.352 2.432 0 3.504 1.248 3.504 4.112v.656h-5.76c.032 1.888.848 2.768 2.624 2.768 1.056 0 2.048-.4 2.608-.912v1.424c-.416.336-1.408.736-2.704.736zm-.272-7.568c-1.44 0-2.208.752-2.256 2.48h4.352c0-1.552-.48-2.48-2.096-2.48zm5.616 10.272v-11.296h1.312l.096 1.36c.48-.848 1.216-1.552 2.784-1.552 2.08 0 3.136 1.168 3.136 4.32 0 3.232-1.12 4.464-3.328 4.464-1.488 0-2.208-.752-2.592-1.568v4.272zm5.888-7.168c0-2.272-.736-3.008-2.176-3.008-1.472 0-2.304.832-2.304 2.56v1.056c0 1.664.88 2.544 2.256 2.544 1.488 0 2.224-.736 2.224-3.152zm7.088 4.464c-2.432 0-3.856-1.296-3.856-5.184 0-5.248 1.248-6.384 4.08-6.768 1.152-.144 2.272-.256 2.896-.512v1.488c-.4.16-1.008.256-2.528.416-2.144.224-3.168.688-3.264 3.904h.048c.544-1.104 1.504-1.84 3.12-1.84 2.288 0 3.312 1.152 3.312 4.112 0 3.056-1.44 4.384-3.808 4.384zm0-1.312c1.52 0 2.352-.912 2.352-3.024 0-2.128-.688-2.848-2.24-2.848-1.632 0-2.496.976-2.496 2.768 0 2.208.816 3.104 2.384 3.104zm8.048 1.312c-1.728 0-2.624-.912-2.624-2.528 0-1.696.848-2.544 3.36-2.544h1.76v-.752c0-1.2-.464-1.648-1.952-1.648-1.008 0-1.92.336-2.512.72v-1.472c.608-.304 1.648-.56 2.704-.56 2.32 0 3.168.864 3.168 2.992v5.616h-1.264l-.096-1.44c-.368.88-1.184 1.616-2.544 1.616zm.368-1.248c1.312 0 2.128-.816 2.128-2.256v-.576h-1.664c-1.536 0-2.016.48-2.016 1.488 0 .88.464 1.344 1.552 1.344zm6.048 1.072v-8.416h1.408v3.488h3.872v-3.488h1.408v8.416h-1.408v-3.648h-3.872v3.648zm9.28 0v-8.416h1.408v3.408h1.024l2.608-3.408h1.664l-3.136 4.016 3.456 4.4h-1.712l-2.88-3.744h-1.024v3.744z"></path><path fill="#000" id="businessonline" d="m36.8 29.096c-1.376 0-3.184-.192-3.184-.192v-11.104h6.816v1.344h-5.328v3.072s.848-.08 1.872-.08c3.12 0 4.144 1.024 4.144 3.408 0 2.352-1.184 3.552-4.32 3.552zm2.784-3.568c0-1.472-.592-2.08-2.752-2.08-.976 0-1.728.08-1.728.08v4.048c0 .016.752.128 1.728.128 2.048 0 2.752-.72 2.752-2.176zm3.792 3.472v-8.432h1.408v5.232c0 .624-.048 1.264-.048 1.264h.048s.32-.64.72-1.28l3.328-5.216h1.392v8.432h-1.408v-5.2c0-.656.048-1.296.048-1.296h-.048s-.32.64-.72 1.28l-3.328 5.216zm11.584.176c-.96 0-2.112-.208-2.8-.56v-1.584c.576.464 1.504.88 2.72.88 1.488 0 2-.512 2-1.376 0-.848-.416-1.264-2-1.264h-1.168v-1.12h1.168c1.2 0 1.68-.48 1.68-1.264 0-.848-.4-1.232-1.728-1.232-.96 0-1.84.32-2.528.832v-1.584c.72-.304 1.536-.512 2.704-.512 2.24 0 2.976.736 2.976 2.368 0 .864-.496 1.616-1.472 1.84 1.2.16 1.792.832 1.792 2.048 0 1.552-.976 2.528-3.344 2.528zm5.456-.176v-8.416h1.408v3.488h3.872v-3.488h1.408v8.416h-1.408v-3.648h-3.872v3.648zm12.736.176c-2.704 0-3.936-1.36-3.936-4.432 0-2.96 1.376-4.352 3.664-4.352 2.432 0 3.504 1.248 3.504 4.112v.656h-5.76c.032 1.888.848 2.768 2.624 2.768 1.056 0 2.048-.4 2.608-.912v1.424c-.416.336-1.408.736-2.704.736zm-.272-7.568c-1.44 0-2.208.752-2.256 2.48h4.352c0-1.552-.48-2.48-2.096-2.48zm9.12 7.568c-2.688 0-3.984-1.296-3.984-4.464 0-2.944 1.36-4.32 3.872-4.32 1.136 0 1.92.288 2.208.416v1.52c-.48-.336-1.2-.624-2.096-.624-1.648 0-2.544.88-2.544 3.008 0 2.256.912 3.152 2.704 3.152.784 0 1.632-.288 2.08-.656v1.456c-.304.176-1.072.512-2.24.512zm12.48 0c-3.136 0-4.88-1.728-4.88-5.776 0-4.064 1.712-5.776 4.88-5.776 3.248 0 4.88 1.632 4.88 5.776 0 4.064-1.712 5.776-4.88 5.776zm0-1.36c2.176 0 3.344-1.168 3.344-4.416 0-3.264-1.168-4.416-3.344-4.416-2.144 0-3.344 1.184-3.344 4.416 0 3.2 1.216 4.416 3.344 4.416zm6.976 1.184v-8.416h1.408v3.488h3.872v-3.488h1.408v8.416h-1.408v-3.648h-3.872v3.648zm9.072.176c-.24 0-.432-.016-.608-.08v-1.504c.128.048.24.064.368.064.848 0 1.28-.944 1.36-6.048l.016-1.04h5.68v8.432h-1.408v-7.12h-2.96l-.016.544c-.144 5.264-.864 6.752-2.432 6.752zm11.552 0c-1.728 0-2.624-.912-2.624-2.528 0-1.696.848-2.544 3.36-2.544h1.76v-.752c0-1.2-.464-1.648-1.952-1.648-1.008 0-1.92.336-2.512.72v-1.472c.608-.304 1.648-.56 2.704-.56 2.32 0 3.168.864 3.168 2.992v5.616h-1.264l-.096-1.44c-.368.88-1.184 1.616-2.544 1.616zm.368-1.248c1.312 0 2.128-.816 2.128-2.256v-.576h-1.664c-1.536 0-2.016.48-2.016 1.488 0 .88.464 1.344 1.552 1.344zm6.048 1.072v-8.416h1.408v5.216c0 .624-.048 1.264-.048 1.264h.032s.336-.64.736-1.28l3.328-5.2h1.392v8.416h-1.408v-5.2c0-.656.048-1.296.048-1.296h-.032s-.336.64-.736 1.28l-3.328 5.216zm3.424-9.776c-1.584 0-2.416-.672-2.544-2.128l1.184-.08c.08.912.496 1.28 1.36 1.28.896 0 1.312-.368 1.392-1.28l1.152.08c-.128 1.456-.96 2.128-2.544 2.128zm6.016 9.776v-8.416h1.408v3.488h3.872v-3.488h1.408v8.416h-1.408v-3.648h-3.872v3.648z"></path><path fill="#17BB4F" id="logo" d="m7.29252298 17.5119424 15.38725162-8.89496319c.5869475 1.15428014.9842752 2.40006929 1.1810083 3.68344249.0766202.5026869.1217387 1.0037397.1347459 1.5000944.0028453.1053988.0044712.2107976.0044712.3166049 0 .5662121-.0394279 1.1238452-.114219 1.6690184-.0310952.2218277-.0678811.441817-.1109672.659968-.331479 1.692917-1.0206546 3.2810479-2.0006618 4.6632836-.9312304 1.3148295-2.1242297 2.4435769-3.5172139 3.3002485-1.4419641.8858809-3.0686704 1.4545441-4.7435439 1.6696312-.3967179.0510653-.7916068.0819087-1.1834471.0931431h-.6682422c-.7336843-.0206304-1.451313-.1070329-2.14617921-.2538967-.49223922-.1072371-.97919429-.2424581-1.44826452-.4070926-1.07593494-.3766577-2.09902834-.9073283-3.0243649-1.5697475-1.37469285-.9843348-2.54452313-2.2574949-3.40868545-3.7488061-.68307845-1.1722551-1.17613062-2.4791184-1.43403795-3.8891336-.14206244-.7778267-.20933378-1.567092-.19917194-2.3551318.00304855-.21427.01239744-.4262932.02642077-.6364779zm0-3.0351174 13.94203562-8.05892205c.0398344.04800138.0790591.09641129.1178773.14502546.0723522.08926215.1436883.18036266.2131953.27228021.1587278.21038905.3103424.42568037.4552501.64587396l-14.72835832 8.51524162-7.08909833-4.0993184c.02560782-.1401232.05467067-.2794293.08515617-.4181227.0693037-.3072088.14897248-.6111495.24083545-.9103922zm0-3.031645 11.97348522-6.92261689c.3684681.28167622.7208805.58479987 1.0543919.90732833l-13.02808036 7.53070256-6.3019627-3.64238603c.17417383-.40280312.37029722-.79621022.58735398-1.17756591zm0-3.03470888 9.35925192-5.41047112c.4830936.20466974.9515541.44099997 1.4019266.70633529l-10.76117852 6.22097963-5.00328037-2.89417719c.25932999-.35888695.5381707-.70429267.83509948-1.03254045z"></path></g></svg></div></div></div><div class="auth-page-container"><div class="login-container"><form data-test-id="Auth.LoginForm" data-analytics-service="Fintech" data-analytics-component="Login-Form" data-analytics-tracking="STD"><!-- react-empty: 26 --><div class="form-group login-input-block"><div class="input-container"><div class="input-box"><input type="text" class="form-control" autocomplete="off" placeholder="Логин" id="inputLogin" data-test-id="login--input"><div class="input-icons"><div class="help-icon"></div></div></div></div></div><div class="form-group password-input-block"><div class="input-container"><div class="input-box"><input type="password" class="form-control" autocomplete="off" placeholder="Пароль" id="inputPassword" data-test-id="password--input"><div class="input-icons"><div data-test-id="password--inputEye"></div><div class="help-icon"></div></div></div></div></div><div class="clearfix form-group login-btn-block"><div class="row"><div class="col-xs-12"><button data-analytics-action="click" data-analytics-label="Action.ENTER" type="submit" class="btn btn-success login-form-button btn-block" data-test-id="login--button"><!-- react-text: 44 -->Войти<!-- /react-text --></button></div></div></div></form></div></div></div></div></div></div>
+    <script>
+        (function() {
+            window.lastCommitHash = '042a190b0a6b841ba711b2b929f4831e0c7eba6c';
+            window.appVersion = '24.0.0';
+
+            console.log('Version: '+ window.appVersion + '. CommitHash: ' + window.lastCommitHash);
+        })();
+    </script>
+    <script src="dcb_load.js"></script>
+    <script>
+        apply_loading_text("spinner-loading", "Идёт загрузка...");
+        dcb_load({
+            icon: [
+                {
+                    rel: 'icon',
+                    list: [
+                        {type: 'image/png', href: "favicon.ico"}
+                    ]
+                }, {
+                    rel: 'shortcut icon',
+                    list: [
+                        {href: "favicon.ico"}
+                    ]
+                }
+            ],
+            css: [
+                "app.css?v=_HASH_"
+            ],
+            js: [
+                "CommonEnums.js?v=_HASH_",
+                "CommonUtils.js?v=_HASH_",
+                "BusinessActions.js?v=_HASH_",
+                "BusinessUtils.js?v=_HASH_",
+                "BusinessModulesAnalytics.js?v=_HASH_",
+                "crypto.js?v=_HASH_",
+                "react.js?v=_HASH_",
+                "app.js?v=_HASH_"
+            ]
+        }, function (parsedOptions, rebrandingUrl) {
+            var rebranding = {
+                url: rebrandingUrl,
+                logo: parsedOptions.rebrandLogo,
+                font: parsedOptions.rebrandFont,
+                logoCssClass: 'rebrand-logo',
+                fontCssClass: 'rebrand-font'
+            };
+            var baseUrl = rebranding.logo ? rebranding.url : '';
+            document.querySelector('.spinner').src = baseUrl + 'spinner.svg?v=_HASH_';
+
+            if (rebranding.logo) {
+                document.body.className += ' ' + rebranding.logoCssClass;
+            }
+            if (rebranding.font) {
+                document.body.className += ' ' + rebranding.fontCssClass;
+            }
+        });
+    </script>
+
+
+</body></html>
