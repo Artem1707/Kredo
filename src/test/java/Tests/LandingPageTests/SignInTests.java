@@ -2,8 +2,10 @@ package Tests.LandingPageTests;
 
 import Common.TestsBase;
 import WebPages.BorrowerPages.ProfileMyDataPage;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
+@Disabled
 public class SignInTests extends TestsBase {
 
     @Test

@@ -1,11 +1,10 @@
 package WebPages;
 
 import WebPages.PageBlocks.SignInModal;
-import WebPages.PageBlocks.SignUpBorrowerModal;
+import WebPages.BorrowerPages.SignUpBorrowerModal;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 
-import static com.codeborne.selenide.Selectors.byClassName;
 import static com.codeborne.selenide.Selectors.byCssSelector;
 import static com.codeborne.selenide.Selenide.$;
 
