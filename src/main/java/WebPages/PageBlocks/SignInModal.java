@@ -1,7 +1,7 @@
 package WebPages.PageBlocks;
 
 import WebPages.BorrowerPages.BorrowerSignInPage;
-import WebPages.InvesrotPages.InvestorSignInPage;
+import WebPages.InvestorPages.InvestorSignInPage;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 

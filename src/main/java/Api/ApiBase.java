@@ -1,5 +1,8 @@
 package Api;
 
+import Models.DogImage;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -10,6 +13,7 @@ import java.net.http.HttpResponse;
 public abstract class ApiBase {
     // default
     // private final HttpClient httpClient = HttpClient.newHttpClient();
+    protected String jwtToken;
 
     private final HttpClient httpClient = HttpClient.newBuilder()
             .version(HttpClient.Version.HTTP_2)
@@ -20,7 +24,8 @@ public abstract class ApiBase {
         HttpRequest request = HttpRequest.newBuilder()
                 .GET()
                 .uri(URI.create(url))
-                .setHeader("User-Agent", "Java 11 HttpClient Bot") // add request header
+                .setHeader("User-Agent", "Java 11 HttpClient") // add request header
+                .setHeader("Authorization", String.format("Bearer {jwtToken}", jwtToken))
                 .build();
 
         HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
@@ -35,6 +40,16 @@ public abstract class ApiBase {
         System.out.println("response: " + response.body());
 
         return response.body();
+    }
 
+    protected String doGet(String url){
+        String response = null;
+        try {
+            response = sendGET(url);
+        } catch (InterruptedException | IOException e) {
+            e.printStackTrace();
+        }
+
+        return response;
     }
 }

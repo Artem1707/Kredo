@@ -41,6 +41,4 @@ public class SignInTests extends TestsBase {
         // Assert
         profilePage.awaitIsOnPage();
     }
-
-
 }

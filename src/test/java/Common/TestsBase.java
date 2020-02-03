@@ -1,28 +1,13 @@
 package Common;
 
-import Api.DogApi;
 import Helpers.ConfigReader;
 import Helpers.KredoUserProvider;
-import Models.DogImage;
 import Models.KredoUser;
 import Models.KredoUserType;
-import WebPages.DeliveryMainPage;
-import WebPages.DeliverySearchResults;
 import WebPages.LandingPage;
 import com.codeborne.selenide.Configuration;
-import com.sun.tools.javac.util.Assert;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 
-import java.io.File;
-import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URL;
-
-import static com.codeborne.selenide.Condition.exactText;
 import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.WebDriverRunner.setWebDriver;
 
