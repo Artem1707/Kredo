@@ -6,6 +6,9 @@ public class Application {
     @JsonProperty("id")
     public Integer id;
 
+    @JsonProperty("borrowerId")
+    public Integer borrowerId;
+
     @JsonProperty("borrower")
     public BorrowerInfo borrower;
 

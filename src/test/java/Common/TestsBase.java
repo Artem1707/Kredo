@@ -1,11 +1,13 @@
 package Common;
 
+import Helpers.ApiFactory;
 import Helpers.ConfigReader;
 import Helpers.KredoUserProvider;
 import Models.KredoUser;
 import Models.KredoUserType;
 import WebPages.LandingPage;
 import com.codeborne.selenide.Configuration;
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 
 import static com.codeborne.selenide.Selenide.open;
@@ -27,12 +29,18 @@ public abstract class TestsBase {
         //setWebDriver(webDriver);
     }
 
+    @AfterAll
+    public static void afterAll(){
+        apiFactory.dispose();
+    }
+
     protected LandingPage goToClientPortal(){
         open("https://www.digitalkredo.ru/");
         LandingPage landingPage = new LandingPage();
         return landingPage.awaitIsOnPage();
     }
 
+    public static ApiFactory apiFactory = new ApiFactory();
     public static String ClientPortalUrl = ConfigReader.GetCProperty("kredo.clientPortal.url");
     public KredoUser Admin = KredoUserProvider.GetUser(KredoUserType.Admin);
     public KredoUser Investor = KredoUserProvider.GetUser(KredoUserType.Investor);

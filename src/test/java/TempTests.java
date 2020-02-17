@@ -1,16 +1,14 @@
 import Api.DogApi;
 import Models.DogImage;
-import Common.TestsBase;
 import com.sun.tools.javac.util.Assert;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-import java.io.IOException;
 
 @Disabled
-public class TempTests extends TestsBase {
+public class TempTests {
     @Test
-    public void sampleApiTest() throws IOException {
+    public void sampleApiTest() {
         DogApi obj = new DogApi();
         DogImage dog = obj.getDogs();
 

@@ -19,7 +19,9 @@ dependencies {
 
     // for restComplete
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version:'2.9.8'
-    //implementation group: 'org.codehaus.jackson', name: 'jackson-mapper-asl', version:'1.9.13'
+
+    implementation group: 'org.asynchttpclient', name: 'async-http-client', version:'2.10.5'
+    //implementation group: 'org.asynchttpclient', name: 'jackson-mapper-asl', version:'1.9.13'
     //implementation group: 'org.springframework', name: 'spring-core', version:'5.2.3.RELEASE'
     //implementation group: 'org.springframework', name: 'spring-context', version:'5.2.3.RELEASE'
     //implementation group: 'org.springframework', name: 'spring-web', version:'5.2.3.RELEASE'

@@ -7,7 +7,7 @@ public class BorrowerInfo {
     public Integer id;
 
     @JsonProperty("inn")
-    public Integer inn;
+    public String inn;
 
     @JsonProperty("company")
     public Company company;

@@ -1,52 +1,45 @@
 package Api;
 
-import Models.DogImage;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import org.asynchttpclient.*;
+import org.asynchttpclient.util.HttpConstants;
 
 import java.io.IOException;
-import java.net.URI;
-import java.net.http.HttpClient;
-import java.net.http.HttpHeaders;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.Future;
 
 public abstract class ApiBase {
-    // default
-    // private final HttpClient httpClient = HttpClient.newHttpClient();
+    private AsyncHttpClient client = Dsl.asyncHttpClient();
     protected String jwtToken;
 
-    private final HttpClient httpClient = HttpClient.newBuilder()
-            .version(HttpClient.Version.HTTP_2)
-            .build();
-
-    protected String sendGET(String url) throws IOException, InterruptedException {
-
-        HttpRequest request = HttpRequest.newBuilder()
-                .GET()
-                .uri(URI.create(url))
-                .setHeader("User-Agent", "Java 11 HttpClient") // add request header
-                .setHeader("Authorization", String.format("Bearer {jwtToken}", jwtToken))
-                .build();
-
-        HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
-        // print response headers
-        HttpHeaders headers = response.headers();
-        headers.map().forEach((k, v) -> System.out.println(k + ":" + v));
-
-        // print status code
-        //System.out.println(response.statusCode());
-
-        // print response body
-        System.out.println("response: " + response.body());
-
-        return response.body();
+    public void setToken(String token){
+        jwtToken = token;
     }
 
-    protected String doGet(String url){
-        String response = null;
+    public void dispose() {
         try {
-            response = sendGET(url);
-        } catch (InterruptedException | IOException e) {
+            client.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    protected String asyncGet(String url){
+        String response = null;
+
+        Request getRequest = new RequestBuilder(HttpConstants.Methods.GET)
+                .setUrl(url)
+                .setHeader("User-Agent", "Java 11 HttpClient") // add request header
+                .setHeader("Authorization", "Bearer " + jwtToken)
+                .build();
+
+        Future<Response> responseFuture = client.executeRequest(getRequest);
+        try {
+            Response resp = responseFuture.get();
+
+            response = resp.getResponseBody();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
             e.printStackTrace();
         }
 

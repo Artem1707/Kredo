@@ -16,12 +16,10 @@ public class DogApi extends ApiBase {
         ObjectMapper mapper = new ObjectMapper();
         DogImage dog = null;
         try {
-            String response = sendGET("https://dog.ceo/api/breeds/image/random");
+            String response = asyncGet("https://dog.ceo/api/breeds/image/random");
 
             dog =  mapper.readValue(response, DogImage.class);
         } catch (IOException e) {
-            e.printStackTrace();
-        } catch (InterruptedException e) {
             e.printStackTrace();
         }
 
