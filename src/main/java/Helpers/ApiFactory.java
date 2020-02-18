@@ -1,6 +1,7 @@
 package Helpers;
 
 import Api.UniApplicationsApi;
+import Api.UniComplianceApi;
 import WebPages.AdminSignInPage;
 import com.codeborne.selenide.Configuration;
 import org.openqa.selenium.WebDriver;
@@ -8,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class ApiFactory {
 
-    public UniApplicationsApi createIfNotExistUniApi(){
+    public UniApplicationsApi createIfNotExistUniAppApi(){
         // get token
         String token = createJwtToken();
 
@@ -23,11 +24,32 @@ public class ApiFactory {
         return uniApplicationApi;
     }
 
+    public UniComplianceApi createIfNotExistUniCompApi(){
+        // get token
+        String token = createJwtToken();
+
+        // create api
+        if (uniComplianceApi == null){
+            uniComplianceApi = new UniComplianceApi(token);
+        }
+        else {
+            uniComplianceApi.setToken(token);
+        }
+
+        return uniComplianceApi;
+    }
+
+
+
     public void dispose(){
         if (uniApplicationApi != null){
             uniApplicationApi.dispose();
         }
+        if(uniComplianceApi != null){
+            uniComplianceApi.dispose();
+        }
     }
+
 
     private String createJwtToken(){
         // start new driver
@@ -57,6 +79,7 @@ public class ApiFactory {
     }
 
     private static UniApplicationsApi uniApplicationApi;
+    private static UniComplianceApi uniComplianceApi;
     private static String ChromeDriverPath = ConfigReader.GetCProperty("chrome.driver");
     public static String ClientPortalUrl = ConfigReader.GetCProperty("kredo.clientPortal.url");
 }
