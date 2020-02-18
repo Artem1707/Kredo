@@ -17,7 +17,7 @@ public class CreateApplicationTests extends TestsBase {
     @Test
     public void simpleTest_UniApi(){
         // arrange
-        UniApplicationsApi uniApi = apiFactory.createIfNotExistUniAppApi();
+        UniApplicationsApi uniApi = apiFactory.getUniAppApi();
 
         ApplicationList apps = uniApi.getApplications();
 

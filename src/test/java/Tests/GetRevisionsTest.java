@@ -9,9 +9,10 @@ public class GetRevisionsTest extends TestsBase {
     @Test
     public void simpleTest_UniApi(){
         // arrange
-        UniComplianceApi uniApi = apiFactory.createIfNotExistUniCompApi();
+        UniComplianceApi uniApi = apiFactory.getUniCompApi();
+        Integer appId = 486;
 
-        RevisionList revisions = uniApi.getRevisions();
+        RevisionList revisions = uniApi.getRevisions(appId);
 
         Integer id = revisions.entities.get(0).id;
     }

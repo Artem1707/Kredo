@@ -8,14 +8,17 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class ApiFactory {
+    public ApiFactory(String baseUrl){
+        _baseUrl = baseUrl;
+    }
 
-    public UniApplicationsApi createIfNotExistUniAppApi(){
+    public UniApplicationsApi getUniAppApi(){
         // get token
         String token = createJwtToken();
 
         // create api
         if (uniApplicationApi == null){
-            uniApplicationApi = new UniApplicationsApi(token);
+            uniApplicationApi = new UniApplicationsApi(_baseUrl, token);
         }
         else {
             uniApplicationApi.setToken(token);
@@ -24,13 +27,13 @@ public class ApiFactory {
         return uniApplicationApi;
     }
 
-    public UniComplianceApi createIfNotExistUniCompApi(){
+    public UniComplianceApi getUniCompApi(){
         // get token
         String token = createJwtToken();
 
         // create api
         if (uniComplianceApi == null){
-            uniComplianceApi = new UniComplianceApi(token);
+            uniComplianceApi = new UniComplianceApi(_baseUrl, token);
         }
         else {
             uniComplianceApi.setToken(token);
@@ -45,6 +48,7 @@ public class ApiFactory {
         if (uniApplicationApi != null){
             uniApplicationApi.dispose();
         }
+
         if(uniComplianceApi != null){
             uniComplianceApi.dispose();
         }
@@ -81,5 +85,8 @@ public class ApiFactory {
     private static UniApplicationsApi uniApplicationApi;
     private static UniComplianceApi uniComplianceApi;
     private static String ChromeDriverPath = ConfigReader.GetCProperty("chrome.driver");
+    private String _baseUrl;
+
     public static String ClientPortalUrl = ConfigReader.GetCProperty("kredo.clientPortal.url");
+
 }

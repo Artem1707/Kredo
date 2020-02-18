@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a38b4d7-967d-4d9f-a26e-e5cbd8f710d6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/CreateApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -13,28 +12,18 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/Api/ApiBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Api/ApiBase.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/Api/DogApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Api/DogApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/WebPages/DeliveryMainPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/WebPages/DeliverySearchResults.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/TempTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/TempTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/Tests/DeliveryTests.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Api/ApiBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Api/ApiBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Api/DogApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Api/DogApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Api/UniApplicationsApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Api/UniApplicationsApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Api/UniComplianceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Api/UniComplianceApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Helpers/ApiFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Helpers/ApiFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/ApiModels/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/ApiModels/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/ApiModels/BorrowerInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/ApiModels/BorrowerInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WebPages/AdminSignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WebPages/AdminSignInPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WebPages/BorrowerPages/ProfileMyDataPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WebPages/BorrowerPages/ProfileMyDataPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Common/TestsBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Common/TestsBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TempTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TempTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/CreateApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/CreateApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/GetRevisionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/GetRevisionsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +138,7 @@
       <recent name="D:\GIT\KredoTests\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GetRevisionsTest">
+  <component name="RunManager" selected="JUnit.CreateApplicationTests.simpleTest_UniApi">
     <configuration name="Tests in 'KredoTests.test'" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -253,11 +242,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GetRevisionsTest" />
+        <item itemvalue="JUnit.CreateApplicationTests.simpleTest_UniApi" />
         <item itemvalue="JUnit.GetRevisionsTest.simpleTest_UniApi" />
+        <item itemvalue="JUnit.GetRevisionsTest" />
         <item itemvalue="JUnit.CreateApplicationTests (1)" />
         <item itemvalue="JUnit.CreateApplicationTests" />
-        <item itemvalue="JUnit.CreateApplicationTests.simpleTest_UniApi" />
       </list>
     </recent_temporary>
   </component>
@@ -347,38 +336,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="155" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1580395082127" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1582024125961">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1582058111426">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582024125961" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1582024125961">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582058111426" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1582058111426">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582024125961" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1582024125961">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582058111426" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1582058111426">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582024125961" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1582024125961">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582058111426" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1582058111426">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582024125961" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1582023909014">
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582058111426" />
+    <state width="1493" height="215" key="GridCell.Tab.1.bottom" timestamp="1582058087191">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582023909014" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1582023909014">
+    <state width="1493" height="215" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582058087191" />
+    <state width="1493" height="215" key="GridCell.Tab.1.center" timestamp="1582058087191">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1582023909014" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1582023909014">
+    <state width="1493" height="215" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1582058087191" />
+    <state width="1493" height="215" key="GridCell.Tab.1.left" timestamp="1582058087191">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1582023909014" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1582023909014">
+    <state width="1493" height="215" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1582058087191" />
+    <state width="1493" height="215" key="GridCell.Tab.1.right" timestamp="1582058087191">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1582023909014" />
+    <state width="1493" height="215" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1582058087191" />
     <state x="277" y="56" key="SettingsEditor" timestamp="1580844914579">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -391,10 +380,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="584" y="191" key="chooseDestDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1579354221624" />
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1582008331848">
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1582051189724">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1582008331848" />
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1582051189724" />
     <state x="540" y="116" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1579347801125">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -424,14 +413,19 @@
           <line>26</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Tests/GetRevisionsTest.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/KredoTests$Tests_in__KredoTests_test_.ic" NAME="Tests in 'KredoTests.test' Coverage Results" MODIFIED="1579806481366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/KredoTests$KredoTests__test_.ic" NAME="KredoTests [test] Coverage Results" MODIFIED="1579358139045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/KredoTests$LandingPageButtonTests_goToLandingPage_PressSignInButton_SignInFormShown.ic" NAME="LandingPageButtonTests.goToLandingPage_PressSignInButton_SignInFormShown Coverage Results" MODIFIED="1579806452082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/KredoTests$KredoTests_goToDeliveryClub_SetAddress_AddressFoundTest2.ic" NAME="KredoTests.goToDeliveryClub_SetAddress_AddressFoundTest2 Coverage Results" MODIFIED="1579355145852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/KredoTests$Tests_in__KredoTests_test_.ic" NAME="Tests in 'KredoTests.test' Coverage Results" MODIFIED="1579806481366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/KredoTests$TempTests.ic" NAME="TempTests Coverage Results" MODIFIED="1580844309730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
