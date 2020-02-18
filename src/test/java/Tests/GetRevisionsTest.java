@@ -1,6 +1,5 @@
 package Tests;
 
-import Api.UniApplicationsApi;
 import Api.UniComplianceApi;
 import Common.TestsBase;
 import Models.ApiModels.RevisionList;

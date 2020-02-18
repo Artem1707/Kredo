@@ -1,16 +1,13 @@
 package Models.ApiModels;
 
+import Models.RevisionType;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Revision {
     /*
-            "id": 4094,
-			"applicationId": 847,
-			"type": "LIMITS_CHECK",
-			"typeId": 9,
-			"status": "OK",
-			"statusId": 1,
-			"checkEndDate": "2020-02-18T07:56:27.180Z"
+      statusId:
+            1   OK
+            2   FAILED
     */
 
     @JsonProperty("id")
@@ -19,8 +16,8 @@ public class Revision {
     @JsonProperty("applicationId")
     public Integer applicationId;
 
-    @JsonProperty("typeId")
-    public Integer typeId;
+    @JsonProperty("type")
+    public RevisionType type;
 
     @JsonProperty("statusId")
     public Integer statusId;
