@@ -25,3 +25,4 @@ hs_err_pid*
 # files with passwords
 Keys.txt
 /src/main/resources/config.properties
+.idea/workspace.xml
