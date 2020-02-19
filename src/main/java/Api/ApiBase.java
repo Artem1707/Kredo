@@ -63,6 +63,30 @@ public abstract class ApiBase {
 
         return response;
     }
+// Кворение криворых ручек и скудного мозга...
+    private String asyncPost(String url, String body){
+        String response = null;
+
+        Request postRequest = (Request) new RequestBuilder(HttpConstants.Methods.POST)
+                .setUrl(url)
+                .setBody(body)
+                .setHeader("User-Agent", "Java 11 HttpClient") // add request header
+                .setHeader("Authorization", "Bearer " + _jwtToken)
+                .build();
+
+        Future<Response> responseFuture = _client.executeRequest(postRequest);
+        try {
+            Response resp = responseFuture.get();
+
+            response = resp.getResponseBody();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+
+        return response;
+    }
 
     private String generateUrl(String requestUrlPart){
         return baseApiUrlPart

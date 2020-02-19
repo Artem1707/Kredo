@@ -20,8 +20,8 @@ public class UniComplianceApi extends ApiBase {
         return getClassValue("revision?size=10&sort=id,desc&applicationId=" + applicationId, RevisionList.class);
     }
 
-    // этот метод подходит только для первых трех заявок.
+   /* метод не GET а PUT // этот метод подходит только для первых трех заявок.
    public RevisionChecked checkManualRevision(Integer revisionId){
        return getClassValue("revision/" + revisionId +"/approve", RevisionChecked.class);
-   }
+   } */
 }

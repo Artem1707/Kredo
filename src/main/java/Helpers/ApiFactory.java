@@ -1,5 +1,6 @@
 package Helpers;
 
+import Api.ApiBase;
 import Api.UniApplicationsApi;
 import Api.UniComplianceApi;
 import WebPages.AdminSignInPage;
@@ -11,6 +12,18 @@ public class ApiFactory {
     public ApiFactory(String baseUrl){
         _baseUrl = baseUrl;
     }
+
+    /* public <T> T getApi(Class<T> clazz){
+        // get token
+        String token = createJwtToken();
+        // create api
+        if (uniApi == null) {
+            uniApi = new clazz(_baseUrl, token);
+        } else {
+            uniApi.setToken(token);
+        }
+        return (T) uniApi;
+    } */
 
     public UniApplicationsApi getUniAppApi(){
         // get token
@@ -81,7 +94,7 @@ public class ApiFactory {
 
         return driver;
     }
-
+    private static ApiBase uniApi;
     private static UniApplicationsApi uniApplicationApi;
     private static UniComplianceApi uniComplianceApi;
     private static String ChromeDriverPath = ConfigReader.GetCProperty("chrome.driver");
