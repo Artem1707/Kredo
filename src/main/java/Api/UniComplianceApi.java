@@ -24,4 +24,8 @@ public class UniComplianceApi extends ApiBase {
    public RevisionChecked checkManualRevision(Integer revisionId){
        return getClassValue("revision/" + revisionId +"/approve", RevisionChecked.class);
    } */
+
+   public void checkMmzRevision(){
+
+   }
 }

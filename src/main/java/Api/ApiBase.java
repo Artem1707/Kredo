@@ -3,9 +3,12 @@ package Api;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.asynchttpclient.*;
+import org.asynchttpclient.request.body.generator.BodyGenerator;
 import org.asynchttpclient.util.HttpConstants;
 
 import java.io.IOException;
+import java.util.Map;
+import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 
@@ -41,12 +44,28 @@ public abstract class ApiBase {
         return null;
     }
 
+
+// Творение криворучки
+    protected  <T> T postRequest(String requestUrlPart, Class<T> clazz, String body) {
+
+        String url = generateUrl(requestUrlPart);
+        String response = asyncPost(url, body);
+
+        try {
+            return mapper.readValue(response, clazz);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
     private String asyncGet(String url){
         String response = null;
 
         Request getRequest = new RequestBuilder(HttpConstants.Methods.GET)
                 .setUrl(url)
-                .setHeader("User-Agent", "Java 11 HttpClient") // add request header
+                .setHeader("User-Agent", "AsyncHttpClient") // add request header
                 .setHeader("Authorization", "Bearer " + _jwtToken)
                 .build();
 
@@ -60,17 +79,15 @@ public abstract class ApiBase {
         } catch (ExecutionException e) {
             e.printStackTrace();
         }
-
         return response;
     }
-// Кворение криворых ручек и скудного мозга...
+// Творение криворых ручек и скудного мозга...
     private String asyncPost(String url, String body){
         String response = null;
-
         Request postRequest = (Request) new RequestBuilder(HttpConstants.Methods.POST)
                 .setUrl(url)
                 .setBody(body)
-                .setHeader("User-Agent", "Java 11 HttpClient") // add request header
+                .setHeader("User-Agent", "AsyncHttpClient") // add request header
                 .setHeader("Authorization", "Bearer " + _jwtToken)
                 .build();
 
@@ -84,7 +101,29 @@ public abstract class ApiBase {
         } catch (ExecutionException e) {
             e.printStackTrace();
         }
+        return response;
+    }
 
+    // Творение криворых ручек и скудного мозга...
+    private String asyncPut(String url, String body){
+        String response = null;
+        Request putRequest = (Request) new RequestBuilder(HttpConstants.Methods.PUT)
+                .setUrl(url)
+                .setBody(body)
+                .setHeader("User-Agent", "AsyncHttpClient") // add request header
+                .setHeader("Authorization", "Bearer " + _jwtToken)
+                .build();
+
+        Future<Response> responseFuture = _client.executeRequest(putRequest);
+        try {
+            Response resp = responseFuture.get();
+
+            response = resp.getResponseBody();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
         return response;
     }
 
@@ -94,6 +133,7 @@ public abstract class ApiBase {
                 + "v1/"
                 + requestUrlPart;
     }
+
 
     private AsyncHttpClient _client = Dsl.asyncHttpClient();
 
