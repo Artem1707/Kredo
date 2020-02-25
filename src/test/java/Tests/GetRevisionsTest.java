@@ -2,6 +2,7 @@ package Tests;
 
 import Api.UniComplianceApi;
 import Common.TestsBase;
+import Helpers.RevisionsApprove;
 import Models.ApiModels.RevisionChecked;
 import Models.ApiModels.RevisionList;
 import org.junit.jupiter.api.Test;
@@ -22,11 +23,21 @@ public class GetRevisionsTest extends TestsBase {
     @Test
     public void adminka_revisionsApprove(){
         UniComplianceApi uniApi = apiFactory.getUniCompApi();
-        Integer revId = 2968;
+        Integer revId = 2969;
 
         RevisionChecked revCheck = uniApi.putRevisionCheck(revId);
 
 
         String status = revCheck.status.toString();
+        assert status.contains("OK");
     }
+
+    @Test
+    public void adminka_AllRevisionsApprove(){
+        UniComplianceApi uniApi = apiFactory.getUniCompApi();
+        Integer appId = 626;
+        RevisionsApprove approve = new RevisionsApprove();
+        approve.approveAllChecks(uniApi, appId);
+    }
+
 }
