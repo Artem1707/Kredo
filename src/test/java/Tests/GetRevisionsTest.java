@@ -1,5 +1,6 @@
 package Tests;
 
+import Api.UniCamundaApi;
 import Api.UniComplianceApi;
 import Common.TestsBase;
 import Helpers.RevisionsApprove;
@@ -35,9 +36,11 @@ public class GetRevisionsTest extends TestsBase {
     @Test
     public void adminka_AllRevisionsApprove(){
         UniComplianceApi uniApi = apiFactory.getUniCompApi();
+        UniCamundaApi uniCam = apiFactory.getUniCamApi();
         Integer appId = 626;
         RevisionsApprove approve = new RevisionsApprove();
         approve.approveAllChecks(uniApi, appId);
+        //uniCam(appId);
     }
 
 }

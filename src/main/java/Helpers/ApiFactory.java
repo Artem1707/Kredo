@@ -2,6 +2,7 @@ package Helpers;
 
 import Api.ApiBase;
 import Api.UniApplicationsApi;
+import Api.UniCamundaApi;
 import Api.UniComplianceApi;
 import WebPages.AdminSignInPage;
 import com.codeborne.selenide.Configuration;
@@ -56,6 +57,22 @@ public class ApiFactory {
     }
 
 
+    public UniCamundaApi getUniCamApi(){
+        // get token
+        String token = createJwtToken();
+
+        // create api
+        if (uniCamundaApi == null){
+            uniCamundaApi = new UniCamundaApi(_baseUrl, token);
+        }
+        else {
+            uniCamundaApi.setToken(token);
+        }
+
+        return uniCamundaApi;
+    }
+
+
 
     public void dispose(){
         if (uniApplicationApi != null){
@@ -64,6 +81,10 @@ public class ApiFactory {
 
         if(uniComplianceApi != null){
             uniComplianceApi.dispose();
+        }
+
+        if(uniCamundaApi != null){
+            uniCamundaApi.dispose();
         }
     }
 
@@ -96,6 +117,7 @@ public class ApiFactory {
     }
     private static ApiBase uniApi;
     private static UniApplicationsApi uniApplicationApi;
+    private static UniCamundaApi uniCamundaApi;
     private static UniComplianceApi uniComplianceApi;
     private static String ChromeDriverPath = ConfigReader.GetCProperty("chrome.driver");
     private String _baseUrl;
