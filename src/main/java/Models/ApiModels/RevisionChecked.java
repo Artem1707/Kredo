@@ -1,5 +1,6 @@
 package Models.ApiModels;
 
+import Models.RevisionType;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class RevisionChecked {
@@ -22,7 +23,7 @@ public class RevisionChecked {
     public String responsibleComment;
 
     @JsonProperty("type")
-    public RevisionList type;
+    public RevisionType type;
 
     @JsonProperty("status")
     public String status;

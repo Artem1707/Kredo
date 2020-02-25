@@ -5,9 +5,12 @@ import Models.ApiModels.RevisionChecked;
 import Models.ApiModels.RevisionList;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.gson.JsonObject;
+import org.apache.http.entity.StringEntity;
 import org.graalvm.compiler.core.common.type.TypeReference;
 
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 
 public class UniComplianceApi extends ApiBase {
 
@@ -25,7 +28,15 @@ public class UniComplianceApi extends ApiBase {
        return getClassValue("revision/" + revisionId +"/approve", RevisionChecked.class);
    } */
 
-   public void checkMmzRevision(){
+   public RevisionChecked putRevisionCheck(Integer revId){
+       JsonObject jsonParams = new JsonObject();
+       jsonParams.addProperty("responsibleId", 13);
+       jsonParams.addProperty("responsibleComment", "Auto");
+       jsonParams.addProperty("checkStatus", "OK");
+       String url = "revision/"+revId+"/approve";
+
+       return putRequest(url, jsonParams.toString(), RevisionChecked.class);
+
 
    }
 }

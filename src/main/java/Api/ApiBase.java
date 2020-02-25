@@ -2,6 +2,8 @@ package Api;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.gson.JsonObject;
+import org.apache.http.entity.StringEntity;
 import org.asynchttpclient.*;
 import org.asynchttpclient.request.body.generator.BodyGenerator;
 import org.asynchttpclient.util.HttpConstants;
@@ -50,6 +52,21 @@ public abstract class ApiBase {
 
         String url = generateUrl(requestUrlPart);
         String response = asyncPost(url, body);
+
+        try {
+            return mapper.readValue(response, clazz);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
+    // Творение криворучки
+    protected  <T> T putRequest(String requestUrlPart, String body, Class<T> clazz) {
+
+        String url = generateUrl(requestUrlPart);
+        String response = asyncPut(url, body);
 
         try {
             return mapper.readValue(response, clazz);
@@ -111,6 +128,7 @@ public abstract class ApiBase {
                 .setUrl(url)
                 .setBody(body)
                 .setHeader("User-Agent", "AsyncHttpClient") // add request header
+                .setHeader("Content-Type", "application/json")
                 .setHeader("Authorization", "Bearer " + _jwtToken)
                 .build();
 
