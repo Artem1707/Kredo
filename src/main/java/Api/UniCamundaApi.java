@@ -1,20 +1,15 @@
 package Api;
 
-import Models.ApiModels.RevisionChecked;
-import com.google.gson.JsonObject;
-
-import java.io.IOException;
 import java.util.concurrent.ExecutionException;
 
 public class UniCamundaApi extends ApiBase {
-    public UniCamundaApi(String baseUrl, String jwtToken) {
-        super(baseUrl, jwtToken);
+    public UniCamundaApi(String baseUrl) {
+        super(baseUrl);
         baseApiUrlPart = "https://uni-camunda.";
     }
 
-    public void leadChecked(Integer appId) throws InterruptedException, ExecutionException, IOException {
-        String url = "processes/borrower/leadChecked/"+appId;
-//нельзя отправлять нулл
-        asyncPutWithoutBody(url);
+    public void setLeadChecked(Integer appId) throws InterruptedException, ExecutionException {
+        String url = generateUrl("processes/borrower/leadChecked/"+appId);
+        asyncPut(url, null);
     }
 }

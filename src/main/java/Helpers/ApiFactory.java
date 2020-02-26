@@ -1,94 +1,59 @@
 package Helpers;
 
 import Api.ApiBase;
-import Api.UniApplicationsApi;
-import Api.UniCamundaApi;
-import Api.UniComplianceApi;
 import WebPages.AdminSignInPage;
 import com.codeborne.selenide.Configuration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.io.IOException;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+import java.util.HashMap;
+import java.util.Map;
 
 public class ApiFactory {
     public ApiFactory(String baseUrl){
         _baseUrl = baseUrl;
     }
 
-    /*public <T> T getApi(Class<T> clazz){
-        // get token
-        String token = createJwtToken();
-        // create api
-        if (uniApi == null) {
-            uniApi = new clazz(_baseUrl, token);
-        } else {
-            uniApi.setToken(token);
-        }
-        return (T) uniApi;
-    } */
+    public <T extends ApiBase> T getApi(Class<T> clazz) throws IllegalAccessException, InstantiationException, InvocationTargetException, NoSuchMethodException {
+        T anyApi = (T)ApiList.get(clazz.getName());
 
-    public UniApplicationsApi getUniAppApi(){
-        // get token
-        String token = createJwtToken();
-
-        // create api
-        if (uniApplicationApi == null){
-            uniApplicationApi = new UniApplicationsApi(_baseUrl, token);
-        }
-        else {
-            uniApplicationApi.setToken(token);
+        if (anyApi == null){
+            anyApi = createApi(clazz);
         }
 
-        return uniApplicationApi;
+        // set token
+        String token = getJwtToken();
+        anyApi.setToken(token);
+
+        return anyApi;
     }
-
-    public UniComplianceApi getUniCompApi(){
-        // get token
-        String token = createJwtToken();
-
-        // create api
-        if (uniComplianceApi == null){
-            uniComplianceApi = new UniComplianceApi(_baseUrl, token);
-        }
-        else {
-            uniComplianceApi.setToken(token);
-        }
-
-        return uniComplianceApi;
-    }
-
-
-    public UniCamundaApi getUniCamApi(){
-        // get token
-        String token = createJwtToken();
-
-        // create api
-        if (uniCamundaApi == null){
-            uniCamundaApi = new UniCamundaApi(_baseUrl, token);
-        }
-        else {
-            uniCamundaApi.setToken(token);
-        }
-
-        return uniCamundaApi;
-    }
-
 
     public void dispose() throws IOException {
-        if (uniApplicationApi != null){
-            uniApplicationApi.dispose();
-        }
-
-        if(uniComplianceApi != null){
-            uniComplianceApi.dispose();
-        }
-
-        if(uniCamundaApi != null){
-            uniCamundaApi.dispose();
+        for (Map.Entry<String, ApiBase> api : ApiList.entrySet()) {
+            api.getValue().dispose();
         }
     }
 
+    private  <T extends  ApiBase> T createApi(Class<T> clazz)
+            throws IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchMethodException {
+        T anyApi = null;
+
+        Constructor ctor = clazz.getDeclaredConstructor(String.class);
+        anyApi = (T)ctor.newInstance(_baseUrl);
+
+        ApiList.put(clazz.getName(), anyApi);
+        return anyApi;
+    }
+
+    private String getJwtToken(){
+        if (_jwtToken == null)
+            _jwtToken = createJwtToken();
+
+        return _jwtToken;
+    }
 
     private String createJwtToken(){
         // start new driver
@@ -116,10 +81,9 @@ public class ApiFactory {
 
         return driver;
     }
-    private static ApiBase uniApi;
-    private static UniApplicationsApi uniApplicationApi;
-    private static UniCamundaApi uniCamundaApi;
-    private static UniComplianceApi uniComplianceApi;
+
+    private String _jwtToken;
+    private Map<String, ApiBase> ApiList = new HashMap<String, ApiBase>();
     private static String ChromeDriverPath = ConfigReader.GetCProperty("chrome.driver");
     private String _baseUrl;
 

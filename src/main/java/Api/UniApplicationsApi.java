@@ -13,8 +13,8 @@ import java.util.concurrent.ExecutionException;
 public class UniApplicationsApi extends ApiBase {
 
 
-    public UniApplicationsApi(String baseUrl, String jwtToken) {
-        super(baseUrl, jwtToken);
+    public UniApplicationsApi(String baseUrl) {
+        super(baseUrl);
         baseApiUrlPart = "https://uni-applications.";
     }
 

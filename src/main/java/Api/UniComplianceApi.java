@@ -11,15 +11,14 @@ import java.util.concurrent.ExecutionException;
 
 public class UniComplianceApi extends ApiBase {
 
-    public UniComplianceApi(String baseUrl, String jwtToken) {
-        super(baseUrl, jwtToken);
+    public UniComplianceApi(String baseUrl) {
+        super(baseUrl);
         baseApiUrlPart = "https://uni-compliance.";
     }
 
     public RevisionList getRevisions(Integer applicationId) throws InterruptedException, ExecutionException, IOException {
         return getClassValue("revision?size=10&sort=id,desc&applicationId=" + applicationId, RevisionList.class);
     }
-
 
    public RevisionChecked putRevisionCheck(Integer revId) throws InterruptedException, ExecutionException, IOException {
        JsonObject jsonParams = new JsonObject();
@@ -29,7 +28,5 @@ public class UniComplianceApi extends ApiBase {
        String url = "revision/"+revId+"/approve";
 
        return putRequest(url, jsonParams.toString(), RevisionChecked.class);
-
-
    }
 }

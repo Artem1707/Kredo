@@ -11,6 +11,7 @@ import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Dimension;
 
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
 import java.util.concurrent.ExecutionException;
 
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
@@ -18,9 +19,11 @@ import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 public class CreateApplicationTests extends TestsBase {
 
     @Test
-    public void simpleTest_UniApi() throws InterruptedException, ExecutionException, IOException {
+    public void simpleTest_UniApi()
+            throws InterruptedException, ExecutionException, IOException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchMethodException {
         // arrange
-        UniApplicationsApi uniApi = apiFactory.getUniAppApi();
+        UniApplicationsApi uniApi = apiFactory.getApi(UniApplicationsApi.class);
+                //apiFactory.getUniAppApi();
 
         ApplicationList apps = uniApi.getApplications();
 

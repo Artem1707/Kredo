@@ -14,14 +14,14 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/Api/ApiBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Api/ApiBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Api/DogApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Api/DogApi.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Api/ApiBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Api/ApiBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Api/DogApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Api/DogApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Api/UniApplicationsApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Api/UniApplicationsApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Api/UniCamundaApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Api/UniCamundaApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Api/UniComplianceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Api/UniComplianceApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Helpers/ApiFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Helpers/ApiFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Common/TestsBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Common/TestsBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Helpers/Awaiter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Helpers/RevisionsApprove.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Helpers/RevisionsHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/CreateApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/CreateApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/GetRevisionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/GetRevisionsTest.java" afterDir="false" />
     </list>
@@ -241,10 +241,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.GetRevisionsTest.adminka_AllRevisionsApprove" />
+        <item itemvalue="JUnit.CreateApplicationTests.simpleTest_UniApi" />
         <item itemvalue="JUnit.GetRevisionsTest.adminka_revisionsApprove" />
         <item itemvalue="JUnit.GetRevisionsTest.simpleTest_UniApi" />
         <item itemvalue="JUnit.GetRevisionsTest" />
-        <item itemvalue="JUnit.CreateApplicationTests.simpleTest_UniApi" />
       </list>
     </recent_temporary>
   </component>
@@ -342,38 +342,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="155" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1580395082127" />
-    <state width="1493" height="251" key="GridCell.Tab.0.bottom" timestamp="1582730206721">
+    <state width="1493" height="163" key="GridCell.Tab.0.bottom" timestamp="1582752525493">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="251" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582730206721" />
-    <state width="1493" height="251" key="GridCell.Tab.0.center" timestamp="1582730206721">
+    <state width="1493" height="163" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582752525493" />
+    <state width="1493" height="163" key="GridCell.Tab.0.center" timestamp="1582752525493">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="251" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582730206721" />
-    <state width="1493" height="251" key="GridCell.Tab.0.left" timestamp="1582730206721">
+    <state width="1493" height="163" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582752525493" />
+    <state width="1493" height="163" key="GridCell.Tab.0.left" timestamp="1582752525493">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="251" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582730206721" />
-    <state width="1493" height="251" key="GridCell.Tab.0.right" timestamp="1582730206721">
+    <state width="1493" height="163" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582752525493" />
+    <state width="1493" height="163" key="GridCell.Tab.0.right" timestamp="1582752525493">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="251" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582730206721" />
-    <state width="1493" height="251" key="GridCell.Tab.1.bottom" timestamp="1582730206721">
+    <state width="1493" height="163" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582752525493" />
+    <state width="1493" height="163" key="GridCell.Tab.1.bottom" timestamp="1582752525493">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="251" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582730206721" />
-    <state width="1493" height="251" key="GridCell.Tab.1.center" timestamp="1582730206721">
+    <state width="1493" height="163" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582752525493" />
+    <state width="1493" height="163" key="GridCell.Tab.1.center" timestamp="1582752525493">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="251" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1582730206721" />
-    <state width="1493" height="251" key="GridCell.Tab.1.left" timestamp="1582730206721">
+    <state width="1493" height="163" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1582752525493" />
+    <state width="1493" height="163" key="GridCell.Tab.1.left" timestamp="1582752525493">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="251" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1582730206721" />
-    <state width="1493" height="251" key="GridCell.Tab.1.right" timestamp="1582730206721">
+    <state width="1493" height="163" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1582752525493" />
+    <state width="1493" height="163" key="GridCell.Tab.1.right" timestamp="1582752525493">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="251" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1582730206721" />
+    <state width="1493" height="163" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1582752525493" />
     <state x="277" y="56" key="SettingsEditor" timestamp="1580844914579">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -386,10 +386,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="584" y="191" key="chooseDestDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1579354221624" />
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1582618154256">
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1582743240309">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1582618154256" />
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1582743240309" />
     <state x="540" y="116" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1579347801125">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -420,84 +420,64 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Helpers/RevisionsApprove.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/Helpers/RevisionsHelper.java</url>
           <line>38</line>
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Helpers/RevisionsApprove.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/Helpers/RevisionsHelper.java</url>
           <line>35</line>
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Helpers/RevisionsApprove.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/Helpers/RevisionsHelper.java</url>
           <line>34</line>
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Helpers/RevisionsApprove.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/Helpers/RevisionsHelper.java</url>
           <line>33</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Helpers/RevisionsApprove.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/Helpers/RevisionsHelper.java</url>
           <line>32</line>
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Helpers/RevisionsApprove.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/Helpers/RevisionsHelper.java</url>
           <line>28</line>
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Helpers/RevisionsApprove.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/Helpers/RevisionsHelper.java</url>
           <line>27</line>
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Helpers/RevisionsApprove.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Helpers/RevisionsApprove.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Helpers/RevisionsApprove.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Helpers/RevisionsApprove.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Helpers/RevisionsApprove.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Helpers/RevisionsApprove.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/Helpers/RevisionsHelper.java</url>
           <line>19</line>
           <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Api/UniCamundaApi.java</url>
-          <line>17</line>
+          <line>12</line>
           <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Api/UniCamundaApi.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="49" />
+          <url>file://$PROJECT_DIR$/src/test/java/Tests/CreateApplicationTests.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Tests/GetRevisionsTest.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/Tests/GetRevisionsTest.java</url>
-          <line>15</line>
-          <properties class="Tests.GetRevisionsTest" method="simpleTest_UniApi">
+          <line>21</line>
+          <properties class="Tests.GetRevisionsTest">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="17" />
@@ -506,10 +486,10 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/KredoTests$Tests_in__KredoTests_test_.ic" NAME="Tests in 'KredoTests.test' Coverage Results" MODIFIED="1579806481366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/KredoTests$KredoTests__test_.ic" NAME="KredoTests [test] Coverage Results" MODIFIED="1579358139045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/KredoTests$LandingPageButtonTests_goToLandingPage_PressSignInButton_SignInFormShown.ic" NAME="LandingPageButtonTests.goToLandingPage_PressSignInButton_SignInFormShown Coverage Results" MODIFIED="1579806452082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/KredoTests$KredoTests_goToDeliveryClub_SetAddress_AddressFoundTest2.ic" NAME="KredoTests.goToDeliveryClub_SetAddress_AddressFoundTest2 Coverage Results" MODIFIED="1579355145852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/KredoTests$Tests_in__KredoTests_test_.ic" NAME="Tests in 'KredoTests.test' Coverage Results" MODIFIED="1579806481366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/KredoTests$TempTests.ic" NAME="TempTests Coverage Results" MODIFIED="1580844309730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
