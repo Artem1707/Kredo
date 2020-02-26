@@ -5,6 +5,9 @@ import Models.ApiModels.RevisionChecked;
 import Models.ApiModels.RevisionList;
 import com.google.gson.JsonObject;
 
+import java.io.IOException;
+import java.util.concurrent.ExecutionException;
+
 
 public class UniComplianceApi extends ApiBase {
 
@@ -13,12 +16,12 @@ public class UniComplianceApi extends ApiBase {
         baseApiUrlPart = "https://uni-compliance.";
     }
 
-    public RevisionList getRevisions(Integer applicationId){
+    public RevisionList getRevisions(Integer applicationId) throws InterruptedException, ExecutionException, IOException {
         return getClassValue("revision?size=10&sort=id,desc&applicationId=" + applicationId, RevisionList.class);
     }
 
 
-   public RevisionChecked putRevisionCheck(Integer revId){
+   public RevisionChecked putRevisionCheck(Integer revId) throws InterruptedException, ExecutionException, IOException {
        JsonObject jsonParams = new JsonObject();
        jsonParams.addProperty("responsibleId", 13);
        jsonParams.addProperty("responsibleComment", "Auto");

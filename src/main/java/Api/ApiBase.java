@@ -24,60 +24,44 @@ public abstract class ApiBase {
         _jwtToken = token;
     }
 
-    public void dispose() {
-        try {
-            _client.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    public void dispose() throws IOException {
+
+        _client.close();
+
     }
 
-    protected  <T> T getClassValue(String requestUrlPart, Class<T> clazz) {
+    protected  <T> T getClassValue(String requestUrlPart, Class<T> clazz) throws ExecutionException, InterruptedException, IOException {
 
         String url = generateUrl(requestUrlPart);
         String response = asyncGet(url);
 
-        try {
-            return mapper.readValue(response, clazz);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        return mapper.readValue(response, clazz);
 
-        return null;
     }
 
 
 // Творение криворучки
-    protected  <T> T postRequest(String requestUrlPart, Class<T> clazz, String body) {
+    protected  <T> T postRequest(String requestUrlPart, Class<T> clazz, String body) throws IOException, ExecutionException, InterruptedException {
 
         String url = generateUrl(requestUrlPart);
         String response = asyncPost(url, body);
 
-        try {
-            return mapper.readValue(response, clazz);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+         return mapper.readValue(response, clazz);
 
-        return null;
     }
 
     // Творение криворучки
-    protected  <T> T putRequest(String requestUrlPart, String body, Class<T> clazz) {
+    protected  <T> T putRequest(String requestUrlPart, String body, Class<T> clazz) throws ExecutionException, InterruptedException, IOException {
 
         String url = generateUrl(requestUrlPart);
         String response = asyncPut(url, body);
 
-        try {
-            return mapper.readValue(response, clazz);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        return mapper.readValue(response, clazz);
 
-        return null;
     }
 
-    private String asyncGet(String url){
+
+    private String asyncGet(String url) throws ExecutionException, InterruptedException {
         String response = null;
 
         Request getRequest = new RequestBuilder(HttpConstants.Methods.GET)
@@ -87,19 +71,12 @@ public abstract class ApiBase {
                 .build();
 
         Future<Response> responseFuture = _client.executeRequest(getRequest);
-        try {
-            Response resp = responseFuture.get();
+        Response resp = responseFuture.get();
+        return   response = resp.getResponseBody();
 
-            response = resp.getResponseBody();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (ExecutionException e) {
-            e.printStackTrace();
-        }
-        return response;
     }
 // Творение криворых ручек и скудного мозга...
-    private String asyncPost(String url, String body){
+    private String asyncPost(String url, String body) throws ExecutionException, InterruptedException {
         String response = null;
         Request postRequest = (Request) new RequestBuilder(HttpConstants.Methods.POST)
                 .setUrl(url)
@@ -109,20 +86,14 @@ public abstract class ApiBase {
                 .build();
 
         Future<Response> responseFuture = _client.executeRequest(postRequest);
-        try {
             Response resp = responseFuture.get();
 
-            response = resp.getResponseBody();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (ExecutionException e) {
-            e.printStackTrace();
-        }
-        return response;
+        return response = resp.getResponseBody();
+
     }
 
     // Творение криворых ручек и скудного мозга...
-    private String asyncPut(String url, String body){
+    private String asyncPut(String url, String body) throws ExecutionException, InterruptedException {
         String response = null;
         Request putRequest = (Request) new RequestBuilder(HttpConstants.Methods.PUT)
                 .setUrl(url)
@@ -133,16 +104,19 @@ public abstract class ApiBase {
                 .build();
 
         Future<Response> responseFuture = _client.executeRequest(putRequest);
-        try {
-            Response resp = responseFuture.get();
+        Response resp = responseFuture.get();
 
-            response = resp.getResponseBody();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (ExecutionException e) {
-            e.printStackTrace();
-        }
-        return response;
+        return   response = resp.getResponseBody();
+    }
+
+    // Творение криворых ручек и скудного мозга...
+    public void asyncPutWithoutBody(String url) throws ExecutionException, InterruptedException {
+        Request putRequest = (Request) new RequestBuilder(HttpConstants.Methods.PUT)
+                .setUrl(url)
+                .setHeader("User-Agent", "AsyncHttpClient") // add request header
+                .setHeader("Content-Type", "application/json")
+                .setHeader("Authorization", "Bearer " + _jwtToken)
+                .build();
     }
 
     private String generateUrl(String requestUrlPart){

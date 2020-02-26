@@ -1,5 +1,6 @@
 package Models.ApiModels;
 
+import Models.RevisionStatus;
 import Models.RevisionType;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -19,7 +20,7 @@ public class Revision {
     @JsonProperty("type")
     public RevisionType type;
 
-    @JsonProperty("statusId")
-    public Integer statusId;
+    @JsonProperty("status")
+    public RevisionStatus status;
 
 }

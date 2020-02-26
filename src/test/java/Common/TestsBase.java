@@ -10,6 +10,8 @@ import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 
+import java.io.IOException;
+
 import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.WebDriverRunner.setWebDriver;
 
@@ -24,7 +26,7 @@ public abstract class TestsBase {
     }
 
     @AfterAll
-    public static void afterAll(){
+    public static void afterAll() throws IOException {
         apiFactory.dispose();
     }
 

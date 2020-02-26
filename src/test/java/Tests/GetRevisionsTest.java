@@ -8,9 +8,12 @@ import Models.ApiModels.RevisionChecked;
 import Models.ApiModels.RevisionList;
 import org.junit.jupiter.api.Test;
 
+import java.io.IOException;
+import java.util.concurrent.ExecutionException;
+
 public class GetRevisionsTest extends TestsBase {
     @Test
-    public void simpleTest_UniApi(){
+    public void simpleTest_UniApi() throws InterruptedException, ExecutionException, IOException {
         // arrange
         UniComplianceApi uniApi = apiFactory.getUniCompApi();
         Integer appId = 486;
@@ -22,7 +25,7 @@ public class GetRevisionsTest extends TestsBase {
 
 
     @Test
-    public void adminka_revisionsApprove(){
+    public void adminka_revisionsApprove() throws InterruptedException, ExecutionException, IOException {
         UniComplianceApi uniApi = apiFactory.getUniCompApi();
         Integer revId = 2969;
 
@@ -34,13 +37,10 @@ public class GetRevisionsTest extends TestsBase {
     }
 
     @Test
-    public void adminka_AllRevisionsApprove(){
-        UniComplianceApi uniApi = apiFactory.getUniCompApi();
-        UniCamundaApi uniCam = apiFactory.getUniCamApi();
-        Integer appId = 626;
-        RevisionsApprove approve = new RevisionsApprove();
-        approve.approveAllChecks(uniApi, appId);
-        //uniCam(appId);
+    public void adminka_AllRevisionsApprove() throws InterruptedException, ExecutionException, IOException {
+        Integer appId = 633;
+        RevisionsApprove approve = new RevisionsApprove(apiFactory);
+        approve.approveAllChecks(appId);
     }
 
 }

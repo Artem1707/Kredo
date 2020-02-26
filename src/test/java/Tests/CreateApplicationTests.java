@@ -10,12 +10,15 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Dimension;
 
+import java.io.IOException;
+import java.util.concurrent.ExecutionException;
+
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
 public class CreateApplicationTests extends TestsBase {
 
     @Test
-    public void simpleTest_UniApi(){
+    public void simpleTest_UniApi() throws InterruptedException, ExecutionException, IOException {
         // arrange
         UniApplicationsApi uniApi = apiFactory.getUniAppApi();
 

@@ -9,12 +9,14 @@ import com.codeborne.selenide.Configuration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.io.IOException;
+
 public class ApiFactory {
     public ApiFactory(String baseUrl){
         _baseUrl = baseUrl;
     }
 
-    /* public <T> T getApi(Class<T> clazz){
+    /*public <T> T getApi(Class<T> clazz){
         // get token
         String token = createJwtToken();
         // create api
@@ -73,8 +75,7 @@ public class ApiFactory {
     }
 
 
-
-    public void dispose(){
+    public void dispose() throws IOException {
         if (uniApplicationApi != null){
             uniApplicationApi.dispose();
         }

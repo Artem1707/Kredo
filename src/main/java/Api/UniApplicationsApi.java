@@ -8,6 +8,7 @@ import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.IOException;
+import java.util.concurrent.ExecutionException;
 
 public class UniApplicationsApi extends ApiBase {
 
@@ -17,7 +18,7 @@ public class UniApplicationsApi extends ApiBase {
         baseApiUrlPart = "https://uni-applications.";
     }
 
-    public ApplicationList getApplications(){
+    public ApplicationList getApplications() throws InterruptedException, ExecutionException, IOException {
         return getClassValue("application?size=10&sort=id,desc", ApplicationList.class);
     }
 }
