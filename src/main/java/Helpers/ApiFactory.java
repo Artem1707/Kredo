@@ -64,8 +64,8 @@ public class ApiFactory {
 
         String token = new AdminSignInPage(driver)
                 .awaitIsOnPage()
-                .signIn(ConfigReader.GetCProperty("kredo.admin_login"),
-                        ConfigReader.GetCProperty("kredo.admin_pass"));
+                .signIn(ConfigReader.getPrivateProperty("kredo.admin_login"),
+                        ConfigReader.getPrivateProperty("kredo.admin_pass"));
 
         // close driver
         driver.close();
@@ -84,9 +84,9 @@ public class ApiFactory {
 
     private String _jwtToken;
     private Map<String, ApiBase> ApiList = new HashMap<String, ApiBase>();
-    private static String ChromeDriverPath = ConfigReader.GetCProperty("chrome.driver");
+    private static String ChromeDriverPath = ConfigReader.getCommonProperty("chrome.driver");
     private String _baseUrl;
 
-    public static String ClientPortalUrl = ConfigReader.GetCProperty("kredo.clientPortal.url");
+    public static String ClientPortalUrl = ConfigReader.getCommonProperty("kredo.clientPortal.url");
 
 }

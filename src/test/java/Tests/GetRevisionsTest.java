@@ -37,7 +37,7 @@ public class GetRevisionsTest extends TestsBase {
 
     @Test
     public void adminka_AllRevisionsApprove() throws InterruptedException, ExecutionException, IOException, NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException {
-        Integer appId = 872;
+        Integer appId = 915;
         RevisionsHelper approve = new RevisionsHelper(apiFactory);
         approve.approveAllChecks(appId);
     }

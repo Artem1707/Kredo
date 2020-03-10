@@ -36,13 +36,12 @@ public abstract class TestsBase {
         return landingPage.awaitIsOnPage();
     }
 
-
-    public static String ClientPortalUrl = ConfigReader.GetCProperty("kredo.clientPortal.url");
+    public static String ClientPortalUrl = ConfigReader.getCommonProperty("kredo.clientPortal.url");
     public static ApiFactory apiFactory = new ApiFactory(ClientPortalUrl);
     public KredoUser Admin = KredoUserProvider.GetUser(KredoUserType.Admin);
     public KredoUser Investor = KredoUserProvider.GetUser(KredoUserType.Investor);
     public KredoUser Borrower = KredoUserProvider.GetUser(KredoUserType.Borrower);
 
-    private static String ChromeBrowserPath = ConfigReader.GetCProperty("chrome.path");
-    private static String ChromeDriverPath = ConfigReader.GetCProperty("chrome.driver");
+    private static String ChromeBrowserPath = ConfigReader.getCommonProperty("chrome.path");
+    private static String ChromeDriverPath = ConfigReader.getCommonProperty("chrome.driver");
 }

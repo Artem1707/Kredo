@@ -1,10 +1,18 @@
 package Api;
 
+import Helpers.ConfigReader;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.asynchttpclient.*;
+import org.asynchttpclient.request.body.generator.ByteArrayBodyGenerator;
+import org.asynchttpclient.request.body.multipart.FilePart;
 import org.asynchttpclient.util.HttpConstants;
+
+import java.io.File;
 import java.io.IOException;
+import java.nio.charset.Charset;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 
@@ -61,17 +69,27 @@ public abstract class ApiBase {
     // Творение криворых ручек и скудного мозга...
     private String asyncPost(String url, String body) throws ExecutionException, InterruptedException {
         String response = null;
-        Request postRequest = (Request) new RequestBuilder(HttpConstants.Methods.POST)
+
+        RequestBuilder builder = new RequestBuilder(HttpConstants.Methods.POST)
                 .setUrl(url)
-                .setBody(body)
                 .setHeader("User-Agent", "AsyncHttpClient") // add request header
-                .setHeader("Authorization", "Bearer " + _jwtToken)
-                .build();
+                .setHeader("Authorization", "Bearer " + _jwtToken);
+
+        if (body !=null){
+            builder.setHeader("Content-Type", "application/json");
+            builder.setBody(body);
+        }
+
+        Request postRequest = (Request) builder.build();
 
         Future<Response> responseFuture = _client.executeRequest(postRequest);
-            Response resp = responseFuture.get();
+        Response resp = responseFuture.get();
 
-        return response = resp.getResponseBody();
+        if(resp.hasResponseBody() && resp.getStatusCode() == 200){
+            response = resp.getResponseBody();
+        }
+
+        return response;
     }
 
     // Творение криворых ручек и скудного мозга...
@@ -81,16 +99,44 @@ public abstract class ApiBase {
         RequestBuilder builder = new RequestBuilder(HttpConstants.Methods.PUT)
                 .setUrl(url)
                 .setHeader("User-Agent", "AsyncHttpClient") // add request header
-                .setHeader("Content-Type", "application/json")
                 .setHeader("Authorization", "Bearer " + _jwtToken);
 
         if (body !=null){
+            builder.setHeader("Content-Type", "application/json");
             builder.setBody(body);
         }
 
         Request putRequest = (Request) builder.build();
 
         Future<Response> responseFuture = _client.executeRequest(putRequest);
+        Response resp = responseFuture.get();
+
+        if(resp.hasResponseBody() && resp.getStatusCode() == 200){
+            response = resp.getResponseBody();
+        }
+
+        return response;
+    }
+
+    protected String asyncPostBinaryData(String url, byte[] body) throws ExecutionException, InterruptedException {
+        String response = null;
+
+        String applicationDataPath = ConfigReader.getCommonProperty("test.applicationTemplatePath");
+        //Path path = Paths.get(applicationDataPath);
+        File file = new File(applicationDataPath);
+
+        RequestBuilder builder = new RequestBuilder(HttpConstants.Methods.POST)
+                .setUrl(url)
+                .setHeader("User-Agent", "AsyncHttpClient") // add request header
+                .setHeader("Authorization", "Bearer " + _jwtToken)
+                .setHeader("Content-Type", "multipart/form-data")
+                //.setBody(new ByteArrayBodyGenerator(body));
+                .addBodyPart(
+                    new FilePart("file", file, "application/octet-stream", Charset.forName("UTF-8"), file.getName()));
+
+        Request postRequest = (Request) builder.build();
+
+        Future<Response> responseFuture = _client.executeRequest(postRequest);
         Response resp = responseFuture.get();
 
         if(resp.hasResponseBody() && resp.getStatusCode() == 200){

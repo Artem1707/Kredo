@@ -3,6 +3,7 @@ package Tests;
 import Api.UniApplicationsApi;
 import Common.TestsBase;
 import Helpers.ApiFactory;
+import Models.ApiModels.ApplicationCreationResult;
 import Models.ApiModels.ApplicationList;
 import WebPages.BorrowerPages.ProfileMyDataPage;
 import com.codeborne.selenide.Condition;
@@ -23,10 +24,23 @@ public class CreateApplicationTests extends TestsBase {
             throws InterruptedException, ExecutionException, IOException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchMethodException {
         // arrange
         UniApplicationsApi uniApi = apiFactory.getApi(UniApplicationsApi.class);
-                //apiFactory.getUniAppApi();
 
         ApplicationList apps = uniApi.getApplications();
 
+        Integer borrowerId = apps.entities.get(0).borrowerId;
+    }
+
+    @Test
+    public void createApplicationFromXML_Success()
+            throws InterruptedException, ExecutionException, IOException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchMethodException {
+        // arrange
+        UniApplicationsApi uniApi = apiFactory.getApi(UniApplicationsApi.class);
+
+        // act
+        ApplicationCreationResult creationResult =  uniApi.createApplicationFromXml();
+
+        // assert
+        ApplicationList apps = uniApi.getApplications();
         Integer borrowerId = apps.entities.get(0).borrowerId;
     }
 }

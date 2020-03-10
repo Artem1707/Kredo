@@ -31,7 +31,6 @@ public class RevisionsHelper {
 
         _revisions = uniApiComp.getRevisions(appId);
 
-        //надо как то усыпыть =(
         Revision revision = _revisions.entities.stream()
                 .filter((s) -> s.type == RevisionType.MMZ_CHECK).findFirst()
                 .orElse(null);
