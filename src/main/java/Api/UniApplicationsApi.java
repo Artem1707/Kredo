@@ -1,11 +1,6 @@
 package Api;
 
-import Models.ApiModels.Application;
 import Models.ApiModels.ApplicationList;
-import Models.ApiModels.RevisionChecked;
-import Models.DogImage;
-import com.fasterxml.jackson.databind.DeserializationFeature;
-import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.IOException;
 import java.util.concurrent.ExecutionException;

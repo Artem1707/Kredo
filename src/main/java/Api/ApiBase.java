@@ -80,7 +80,7 @@ public abstract class ApiBase {
 
         RequestBuilder builder = new RequestBuilder(HttpConstants.Methods.PUT)
                 .setUrl(url)
-                .setHeader("User-Agent", "AsyncHttpClient") // add request header
+                //.setHeader("User-Agent", "AsyncHttpClient") // add request header
                 .setHeader("Content-Type", "application/json")
                 .setHeader("Authorization", "Bearer " + _jwtToken);
 

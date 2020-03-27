@@ -28,8 +28,9 @@ public class RevisionsHelper {
 
         UniCamundaApi uniApiCamunda = _apiFactory.getApi(UniCamundaApi.class);
         uniApiCamunda.setLeadChecked(appId);
-
-        _revisions = uniApiComp.getRevisions(appId);
+        while (_revisions.totalSize != 4) {
+            _revisions = uniApiComp.getRevisions(appId);
+        }
 
         //надо как то усыпыть =(
         Revision revision = _revisions.entities.stream()

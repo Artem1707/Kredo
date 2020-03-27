@@ -22,9 +22,9 @@ public class UniComplianceApi extends ApiBase {
 
    public RevisionChecked putRevisionCheck(Integer revId) throws InterruptedException, ExecutionException, IOException {
        JsonObject jsonParams = new JsonObject();
-       jsonParams.addProperty("responsibleId", 13);
-       jsonParams.addProperty("responsibleComment", "Auto");
        jsonParams.addProperty("checkStatus", "OK");
+       jsonParams.addProperty("responsibleId", 10);
+       jsonParams.addProperty("responsibleComment", "Auto");
        String url = "revision/"+revId+"/approve";
 
        return putRequest(url, jsonParams.toString(), RevisionChecked.class);
