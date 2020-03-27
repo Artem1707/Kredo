@@ -1,7 +1,5 @@
-package WebPages.InvesrotPages;
+package WebPages.InvestorPages;
 
-import WebPages.BorrowerPages.BorrowerSignInPage;
-import WebPages.BorrowerPages.BorrowerSmsSignInPage;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 

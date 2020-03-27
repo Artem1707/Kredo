@@ -10,18 +10,16 @@ import java.net.http.HttpHeaders;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
-public class DogApi extends ApiBase {
+public class DogApi {
     public DogImage getDogs(){
 
         ObjectMapper mapper = new ObjectMapper();
         DogImage dog = null;
         try {
-            String response = sendGET("https://dog.ceo/api/breeds/image/random");
+            //String response = asyncGet("https://dog.ceo/api/breeds/image/random");
 
-            dog =  mapper.readValue(response, DogImage.class);
+            dog =  mapper.readValue("kl", DogImage.class);
         } catch (IOException e) {
-            e.printStackTrace();
-        } catch (InterruptedException e) {
             e.printStackTrace();
         }
 

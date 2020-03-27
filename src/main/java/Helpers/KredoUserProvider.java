@@ -16,22 +16,22 @@ public class KredoUserProvider {
     }
 
     private static KredoUser GetNewBorrower(){
-        String login = ConfigReader.GetCProperty("kredo.borrower_login");
-        String password = ConfigReader.GetCProperty("kredo.borrower_pass");
+        String login = ConfigReader.getPrivateProperty("kredo.borrower_login");
+        String password = ConfigReader.getPrivateProperty("kredo.borrower_pass");
 
         return new Borrower(login, password);
     }
 
     private static KredoUser GetNewInvestor(){
-        String login = ConfigReader.GetCProperty("kredo.investor_login");
-        String password = ConfigReader.GetCProperty("kredo.investor_pass");
+        String login = ConfigReader.getPrivateProperty("kredo.investor_login");
+        String password = ConfigReader.getPrivateProperty("kredo.investor_pass");
 
         return new Investor(login, password);
     }
 
     private static KredoUser GetNewAdminUser(){
-        String login = ConfigReader.GetCProperty("kredo.admin_login");
-        String password = ConfigReader.GetCProperty("kredo.admin_pass");
+        String login = ConfigReader.getPrivateProperty("kredo.admin_login");
+        String password = ConfigReader.getPrivateProperty("kredo.admin_pass");
 
         return new Admin(login, password);
     }
