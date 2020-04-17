@@ -3,5 +3,6 @@ package Models;
 public enum RevisionStatus {
     OK,
     FAILED,
-    IN_PROGRESS;
+    IN_PROGRESS,
+    NOT_PERFORMED;
 }

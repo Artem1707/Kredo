@@ -92,7 +92,6 @@ public abstract class ApiBase {
         return response;
     }
 
-    // Творение криворых ручек и скудного мозга...
     protected String asyncPut(String url, String body) throws ExecutionException, InterruptedException {
         String response = null;
 
