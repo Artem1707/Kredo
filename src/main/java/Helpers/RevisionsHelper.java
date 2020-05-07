@@ -25,7 +25,7 @@ public class RevisionsHelper {
 
         Integer checkCount = 0;
         while (revision == null) {
-            Thread.sleep(5 * 1000);
+            Thread.sleep(10 * 1000);
             _revisions = _uniApiComp.getRevisions(appId);
             revision = _revisions.entities.stream()
                     .filter((s) -> s.type == type).findFirst()

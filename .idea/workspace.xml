@@ -1,42 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a38b4d7-967d-4d9f-a26e-e5cbd8f710d6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Models/ApiModels/ApplicationCreationResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Api/ApiBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Api/ApiBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Api/ApiBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Api/ApiBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Api/UniApplicationsApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Api/UniApplicationsApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Api/UniComplianceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Api/UniComplianceApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Helpers/ApiFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Helpers/ApiFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Helpers/ConfigReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Helpers/ConfigReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Helpers/KredoUserProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Helpers/KredoUserProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Helpers/RevisionsHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Helpers/RevisionsHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Common/TestsBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Common/TestsBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/CreateApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/CreateApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/GetRevisionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/GetRevisionsTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="64471c5c-4b13-4464-8482-3f5da81ab0d1" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="ErrorTreeViewConfiguration">
-    <option name="hideInfoMessages" value="true" />
-    <option name="hideWarnings" value="true" />
-    <option name="HIDE_WARNINGS" value="true" />
-    <option name="HIDE_INFO_MESSAGES" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -46,65 +15,16 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <task path="$PROJECT_DIR$">
-          <activation />
-        </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="KredoTests" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="KredoTests" type="f1a62948:ProjectNode" />
-                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="KredoTests" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="KredoTests" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="KredoTests" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="other" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="KredoTests" type="f1a62948:ProjectNode" />
-                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
       </state>
     </system>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JUnit5 Test Class" />
-        <option value="XML Properties File" />
-        <option value="Interface" />
-        <option value="Enum" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectId" id="1WZBLlzQU6SBijp5A8DIsKz6nP5" />
+  <component name="ProjectId" id="1bXPX9MX84cmk7A7gDYSbSAX5DO" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -112,44 +32,16 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="WebPages" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\GIT\KredoTests\src\main\resources" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="Models.ApiModels" />
-      <recent name="Tests" />
-      <recent name="Api" />
-      <recent name="WebPages" />
-      <recent name="WebPages.BorrowerPages" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\KredoTests\src\main\resources" />
-      <recent name="D:\GIT\KredoTests\src\main\resources" />
-      <recent name="D:\GIT\KredoTests\src\test\resources" />
-    </key>
+    <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RunManager" selected="JUnit.GetRevisionsTest.adminka_AllRevisionsApprove">
-    <configuration name="Tests in 'KredoTests.test'" type="GradleRunConfiguration" factoryName="Gradle">
+    <configuration name="GetRevisionsTest.adminka_AllRevisionsApprove" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests *" />
+        <option name="scriptParameters" value="--tests &quot;Tests.GetRevisionsTest.adminka_AllRevisionsApprove&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -159,42 +51,10 @@
             <option value=":test" />
           </list>
         </option>
-        <option name="vmOptions" value="" />
+        <option name="vmOptions" />
       </ExternalSystemSettings>
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
-    </configuration>
-    <configuration name="CreateApplicationTests.createApplicationFromXML_Success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="KredoTests.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.CreateApplicationTests" />
-      <option name="METHOD_NAME" value="createApplicationFromXML_Success" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CreateApplicationTests.simpleTest_UniApi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="KredoTests.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.CreateApplicationTests" />
-      <option name="METHOD_NAME" value="simpleTest_UniApi" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration name="GetRevisionsTest.adminka_AllRevisionsApprove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="KredoTests.test" />
@@ -212,45 +72,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetRevisionsTest.adminka_revisionsApprove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="KredoTests.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.GetRevisionsTest" />
-      <option name="METHOD_NAME" value="adminka_revisionsApprove" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GetRevisionsTest.simpleTest_UniApi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="KredoTests.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.GetRevisionsTest" />
-      <option name="METHOD_NAME" value="simpleTest_UniApi" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.GetRevisionsTest.adminka_AllRevisionsApprove" />
-        <item itemvalue="JUnit.CreateApplicationTests.createApplicationFromXML_Success" />
-        <item itemvalue="JUnit.CreateApplicationTests.simpleTest_UniApi" />
-        <item itemvalue="JUnit.GetRevisionsTest.adminka_revisionsApprove" />
-        <item itemvalue="JUnit.GetRevisionsTest.simpleTest_UniApi" />
+        <item itemvalue="Gradle.GetRevisionsTest.adminka_AllRevisionsApprove" />
       </list>
     </recent_temporary>
   </component>
@@ -266,216 +91,62 @@
       </list>
     </option>
   </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
-  <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="2a38b4d7-967d-4d9f-a26e-e5cbd8f710d6" name="Default Changelist" comment="" />
-      <created>1579347182260</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1579347182260</updated>
-    </task>
-    <task id="LOCAL-00001" summary="fix signUp tests">
-      <created>1580411270306</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1580411270306</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
-    <servers />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix signUp tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix signUp tests" />
-  </component>
   <component name="WindowStateProjectService">
-    <state x="361" y="52" key="#Inspections" timestamp="1582111205651">
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1588833648516">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="52" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1582111205651" />
-    <state x="361" y="48" width="814" height="776" key="#Intentions" timestamp="1582717242632">
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588833648516" />
+    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1588833648516">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="48" width="814" height="776" key="#Intentions/0.0.1536.824@0.0.1536.824" timestamp="1582717242632" />
-    <state x="492" y="40" key="#KredoTests.goToDeliveryClub_SetAddress_AddressFoundTest2" timestamp="1579355178159">
+    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1588833648516" />
+    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1588833648516">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="492" y="40" key="#KredoTests.goToDeliveryClub_SetAddress_AddressFoundTest2/0.0.1536.824@0.0.1536.824" timestamp="1579355178159" />
-    <state x="361" y="72" key="#Project_Structure" timestamp="1579366406401">
+    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1588833648516" />
+    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1588833648516">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="72" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1579366406401" />
-    <state x="496" y="40" key="#Tests_in_'KredoTests.test'" timestamp="1579352474439">
+    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1588833648516" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1588833648517">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="496" y="40" key="#Tests_in_'KredoTests.test'/0.0.1536.824@0.0.1536.824" timestamp="1579352474439" />
-    <state x="499" y="168" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1579352520179">
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588833648517" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1588833648516">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="168" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1579352520179" />
-    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579371065967">
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1588833648516" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1588833648516">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1579371065967" />
-    <state x="574" y="123" key="#com.intellij.ide.util.MemberChooser" timestamp="1579805059825">
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1588833648516" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1588833648517">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="123" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1579805059825" />
-    <state x="499" y="197" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1579347694171">
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1588833648517" />
+    <state x="277" y="56" key="SettingsEditor" timestamp="1588775634057">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="197" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1579347694171" />
-    <state x="473" y="77" key="#com.intellij.refactoring.encapsulateFields.EncalpsulateFieldsDialog" timestamp="1582123368121">
+    <state x="277" y="56" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1588775634057" />
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1588775516441">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="473" y="77" key="#com.intellij.refactoring.encapsulateFields.EncalpsulateFieldsDialog/0.0.1536.824@0.0.1536.824" timestamp="1582123368121" />
-    <state x="524" y="278" width="403" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1580393866804">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="524" y="278" width="403" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1580393866804" />
-    <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580758948981">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1580758948981" />
-    <state x="424" y="8" key="CommitChangelistDialog2" timestamp="1580411266761">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="424" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1580411266761" />
-    <state x="549" y="155" key="FileChooserDialogImpl" timestamp="1580395082127">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="549" y="155" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1580395082127" />
-    <state width="1493" height="208" key="GridCell.Tab.0.bottom" timestamp="1587120655967">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587120655967" />
-    <state width="1493" height="208" key="GridCell.Tab.0.center" timestamp="1587120655967">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587120655967" />
-    <state width="1493" height="208" key="GridCell.Tab.0.left" timestamp="1587120655966">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587120655966" />
-    <state width="1493" height="208" key="GridCell.Tab.0.right" timestamp="1587120655967">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587120655967" />
-    <state width="1493" height="232" key="GridCell.Tab.1.bottom" timestamp="1587054520520">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="232" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587054520520" />
-    <state width="1493" height="232" key="GridCell.Tab.1.center" timestamp="1587054520520">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="232" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1587054520520" />
-    <state width="1493" height="232" key="GridCell.Tab.1.left" timestamp="1587054520520">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="232" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1587054520520" />
-    <state width="1493" height="232" key="GridCell.Tab.1.right" timestamp="1587054520520">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="232" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1587054520520" />
-    <state x="277" y="56" key="SettingsEditor" timestamp="1580844914579">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="277" y="56" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1580844914579" />
-    <state x="361" y="135" key="Vcs.Push.Dialog.v2" timestamp="1580411298444">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="361" y="135" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1580411298444" />
-    <state x="584" y="191" key="chooseDestDirectoryDialog" timestamp="1579354221624">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="584" y="191" key="chooseDestDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1579354221624" />
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1587026727158">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1587026727158" />
-    <state x="540" y="116" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1579347801125">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="540" y="116" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1579347801125" />
-    <state x="209" y="33" key="new project wizard" timestamp="1580120536848">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="209" y="33" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1580120536848" />
-    <state x="511" y="43" key="refactoring.ChangeSignatureDialog" timestamp="1582104021387">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="511" y="43" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1582104021387" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1579347927011">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1579347927011" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1579799165717">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1579799165717" />
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1588775516441" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/Tests/SignOutTests.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Api/UniCamundaApi.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="48" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/Tests/CreateApplicationTests.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="50" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Api/UniApplicationsApi.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="58" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/Tests/CreateApplicationTests.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="59" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Tests/GetRevisionsTest.java</url>
           <line>41</line>
-          <option name="timeStamp" value="61" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Helpers/RevisionsHelper.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="62" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Helpers/RevisionsHelper.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="63" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/Tests/GetRevisionsTest.java</url>
-          <line>21</line>
-          <properties class="Tests.GetRevisionsTest">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="17" />
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/KredoTests$Tests_in__KredoTests_test_.ic" NAME="Tests in 'KredoTests.test' Coverage Results" MODIFIED="1579806481366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/KredoTests$KredoTests__test_.ic" NAME="KredoTests [test] Coverage Results" MODIFIED="1579358139045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/KredoTests$LandingPageButtonTests_goToLandingPage_PressSignInButton_SignInFormShown.ic" NAME="LandingPageButtonTests.goToLandingPage_PressSignInButton_SignInFormShown Coverage Results" MODIFIED="1579806452082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/KredoTests$KredoTests_goToDeliveryClub_SetAddress_AddressFoundTest2.ic" NAME="KredoTests.goToDeliveryClub_SetAddress_AddressFoundTest2 Coverage Results" MODIFIED="1579355145852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/KredoTests$TempTests.ic" NAME="TempTests Coverage Results" MODIFIED="1580844309730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="_revisions.entities" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
